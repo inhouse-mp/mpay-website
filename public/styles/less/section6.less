@@ -1,0 +1,259 @@
+@import "./tools.less";
+
+.section6 {
+  background-color: @blue-fade;
+  padding: 8.15vh 6.05vw;
+  .inner {
+    max-width: 1304px;
+    margin: auto;
+    display: flex;
+    height: 500px;
+    & > div {
+      flex: 1;
+      height: 100%;
+      &.one {
+        border-radius: 24px 0px 0px 24px;
+        background: @blue-gradient;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+          display: inline-block;
+          width: 275px;
+          height: 100%;
+          max-height: 192px;
+          padding: 3.5vh 2.31vw;
+          border-radius: 12px;
+          p {
+            font-size: 0.85rem;
+            margin-bottom: 0px;
+          }
+          h1 {
+            color: @persian_blue;
+            font-weight: bold;
+            margin-top: 2.3vh;
+            margin-bottom: 0.5vh;
+          }
+          &.first {
+            background: @blue-fade;
+          }
+          &.second {
+            background: @blue-gradient;
+            border: 1.5px solid @blue-light;
+            margin-left: -40px;
+            margin-top: 86px;
+            color: white;
+            h1 {
+              color: white;
+            }
+          }
+        }
+      }
+      &.two {
+        border-radius: 0px 24px 24px 0px;
+        border: 1px solid @periwinkle;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1,
+        p,
+        div {
+          max-width: 360px;
+          //   border: 1px solid red;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          margin-bottom: 2.86vh;
+        }
+        div {
+          width: 100%;
+          display: flex;
+          a {
+            flex: 1;
+            text-align: center;
+            text-decoration: none;
+            height: 5.37vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            color: @eerie-black;
+            &.first {
+              background: @persian_blue;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // TAB LANDSCAPE
+  @media @tab_landscape {
+    .inner {
+      & > div {
+        &.one {
+          div {
+            width: 21vw;
+
+            padding: 2.49vh 1.5vw;
+            height: 160px;
+            &.second {
+              margin-top: 90px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // TAB PORTRAIT
+  @media @tab_portrait {
+    .inner {
+      height: 400px;
+      & > div {
+        &.one {
+          div {
+            width: 23.5vw;
+            transform: scale(0.9);
+            padding: 2.49vh 1.2vw;
+            height: 140px;
+            p {
+              font-size: 0.8rem;
+            }
+            h1 {
+              font-size: 1.8rem;
+              margin-top: 10px;
+            }
+            &.second {
+              margin-top: 90px;
+            }
+          }
+        }
+        &.two {
+          h1 {
+            font-size: 1.5rem;
+            text-align: left;
+            width: 90%;
+          }
+          p {
+            font-size: 0.9rem;
+            width: 90%;
+          }
+          .links {
+            width: 90%;
+            a {
+              height: auto;
+              padding: 1.3vh 3vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // MOBILE LANDSCAPE
+  @media @mobile_landscape {
+    .inner {
+      height: 300px;
+      & > div {
+        width: auto;
+        &.one {
+          div {
+            max-height: 140px;
+            width: auto;
+            h1 {
+              margin-top: 4vh;
+            }
+            p {
+              font-size: 0.8rem;
+            }
+            &.second {
+              margin-left: -30px;
+            }
+          }
+        }
+        &.two {
+          h1 {
+            font-size: 1.5rem;
+            width: 80%;
+          }
+          p {
+            width: 80%;
+            font-size: 0.8rem;
+          }
+          .links {
+            width: 80%;
+            a {
+              height: auto;
+              font-size: 0.8rem;
+              padding: 2vh 0vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // MOBILE PORTRAIT
+  @media @mobile_portrait {
+    .inner {
+      flex-direction: column;
+      height: auto;
+      & > div {
+        &.one {
+          border-radius: 24px 24px 0px 0px;
+          padding: 8.27vh 6vw;
+          display: block;
+          div{
+            transform: scale(.8);
+            width: 75vw;
+            // .bred;
+            max-width: 210px;
+            p{
+              font-size: .8rem;
+            }
+            .first{
+              float: left;
+              margin-right: 10px;
+            }
+            &.second{
+              margin-top: -100px;
+              margin-right: -10px;
+              float: right;
+
+              
+            }
+          }
+        }
+        &.two{
+          padding: 6.3vh 9.7vw;
+          border-radius:  0px 0px 24px 24px;
+          h1,p,.links{
+            width: 100%;
+          }
+          h1{
+            font-size: 1.5rem;
+          }
+          p{
+            font-size: .9rem;
+          }
+          div{
+            flex-direction: column;
+            gap: 2vh;
+            margin-top: 3.43vh;
+            a{
+              font-size: .9rem;
+              height: 6vh;
+              padding: 2.15vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}

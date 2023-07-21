@@ -1,0 +1,195 @@
+/*
+.links {
+    .show-on-mobile('none');
+    border: 1px solid red;
+    padding: 10px;
+  }
+*/
+@import "../../assets/GTWalsheimPro/stylesheet.css";
+.blue-black {
+  color: #1e1e1e;
+}
+.blue-black .blue {
+  color: #192cd1;
+}
+.davy-gray {
+  color: #525252;
+}
+.section3 {
+  margin: 7.43vh auto auto auto;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 7.34vh;
+}
+.section3 .inner {
+  background-color: #FBFBFB;
+  max-width: 1304px;
+  margin: auto;
+}
+.section3 .inner > .text {
+  display: flex;
+  flex-direction: column;
+  max-width: 527px;
+  margin: auto;
+  margin-bottom: 6.54vh;
+}
+.section3 .inner > .text .top-text {
+  background: linear-gradient(225deg, #4043FF 0%, #192CD1 100%);
+  display: inline-block;
+  margin: auto;
+  color: #E8EBFF;
+  padding: 1.07vh 1.04vw;
+  font-weight: 500;
+  border-radius: 20px;
+  margin-bottom: 1.43vh;
+}
+.section3 .inner > .text h1 {
+  font-size: 1.88rem;
+  text-align: center;
+  margin-bottom: 1.07vh;
+}
+.section3 .inner > .text p {
+  text-align: center;
+}
+.section3 .inner .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  gap: 4.86vw;
+}
+.section3 .inner .products .product {
+  min-width: 312px;
+  max-width: 18.6vw;
+}
+.section3 .inner .products .product .img-cont {
+  background-color: #EAECFF;
+  padding: 3.58vh 2.78vw;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px 24px 0px 0px;
+}
+.section3 .inner .products .product .img-cont img {
+  width: 90px;
+}
+.section3 .inner .products .product .text {
+  background-color: #F4F4F4;
+  border-radius: 0px 0px 24px 24px;
+  padding: 2.51vh 1.85vw;
+}
+.section3 .inner .products .product .text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.07vh;
+}
+.section3 .inner .products .product .text p {
+  color: #525252;
+  margin-bottom: 2.07vh;
+}
+.section3 .inner .products .product .text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #192cd1;
+}
+@media screen and (min-width: 1081px)  {
+  .section3 {
+    padding-bottom: 7.34vh;
+  }
+}
+@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section3 .inner .text .top-text {
+    padding: 1.3vh 1.7vw;
+  }
+  .section3 .inner .products {
+    padding: 0vh 6.51vw;
+  }
+  .section3 .inner .products .product {
+    min-width: 25.3vw;
+  }
+  .section3 .inner .products .product .img-cont {
+    min-height: 20vh;
+  }
+  .section3 .inner .products .product .text h3 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .section3 .inner .text .top-text {
+    padding: 1.3vh 2.7vw;
+    border-radius: 25px;
+  }
+  .section3 .inner .products {
+    gap: 1vw;
+  }
+  .section3 .inner .products .product {
+    min-width: 29.3vw;
+    transform: scale(0.95);
+  }
+  .section3 .inner .products .product .img-cont {
+    min-height: 15vh;
+    max-height: 15vh;
+  }
+  .section3 .inner .products .product .text h3 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section3 {
+    padding-bottom: 7.3vh;
+  }
+  .section3 .inner > .text .top-text {
+    font-size: 0.9rem;
+    padding: 1.3vh 1.7vw;
+  }
+  .section3 .inner .products {
+    gap: 5vw;
+  }
+  .section3 .inner .products .product {
+    min-width: 25vw;
+  }
+  .section3 .inner .products .product .img-cont {
+    height: 30vh;
+  }
+  .section3 .inner .products .product .text h3 {
+    font-size: 1.1rem;
+  }
+  .section3 .inner .products .product .text p,
+  .section3 .inner .products .product .text a {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+  .section3 {
+    padding: 0vh 6.51vw;
+    border-bottom: 1px solid transparent;
+  }
+  .section3 .inner > .text .top-text {
+    font-size: 0.9rem;
+    padding: 1.5vh 4.7vw;
+    border-radius: 25px;
+  }
+  .section3 .inner .products {
+    gap: 6vh;
+  }
+  .section3 .inner .products .product .img-cont {
+    padding: 8.8vh;
+  }
+  .section3 .inner .products .product .text {
+    background-color: transparent;
+    padding: 3.43vh;
+  }
+  .section3 .inner .products .product .text h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .section3 .inner .products .product .text p {
+    text-align: center;
+    margin-bottom: 2.15vh;
+  }
+  .section3 .inner .products .product .text a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

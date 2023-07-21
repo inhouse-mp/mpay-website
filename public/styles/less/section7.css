@@ -1,0 +1,149 @@
+/*
+.links {
+    .show-on-mobile('none');
+    border: 1px solid red;
+    padding: 10px;
+  }
+*/
+@import "../../assets/GTWalsheimPro/stylesheet.css";
+.blue-black {
+  color: #1e1e1e;
+}
+.blue-black .blue {
+  color: #192cd1;
+}
+.davy-gray {
+  color: #525252;
+}
+.bred {
+  border: 1px solid red;
+}
+.section7 {
+  max-width: 1304px;
+  margin: auto;
+}
+.section7 h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4.3vh;
+  margin-top: 6vh;
+}
+.section7 .inner {
+  display: flex;
+  gap: 15vw;
+  margin-bottom: 6vh;
+}
+.section7 .inner .img-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section7 .inner .img-cont img {
+  max-width: 18.75rem;
+}
+.section7 .inner #carousel {
+  flex: 1;
+}
+.section7 .inner #carousel .carousel-inner .carousel-item div {
+  width: 24.31vw;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  background: #F3F5FF;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0vh 1.62vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.15vh;
+}
+.section7 .inner #carousel .carousel-inner .carousel-item div img {
+  width: 4.17vw;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  background: white;
+}
+.section7 .inner #carousel .carousel-inner .carousel-item div p {
+  color: #1e1e1e;
+  text-align: center;
+}
+.section7 .inner #carousel .carousel-inner .carousel-item.active div {
+  background: #192cd1;
+}
+.section7 .inner #carousel .carousel-inner .carousel-item.active div p {
+  color: white;
+}
+.section7 .inner #carousel .controller-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.86vh;
+  gap: 1.16vw;
+}
+.section7 .inner #carousel .controller-cont button {
+  position: relative !important;
+  width: 48px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid #192cd1;
+}
+.section7 .inner #carousel .controller-cont button.rght img {
+  display: block;
+  transform: rotate(90);
+}
+@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section7 {
+    padding: 0vh 6.05vw;
+  }
+  .section7 .inner #carousel .carousel-inner .carousel-item div {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .section7 {
+    padding: 0vh 6.05vw;
+  }
+  .section7 .inner {
+    gap: 5vw;
+  }
+  .section7 .inner .img-cont img {
+    max-width: 15rem;
+  }
+  .section7 .inner #carousel .carousel-inner .carousel-item div {
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section7 .inner {
+    flex-direction: row;
+    gap: 0px;
+  }
+  .section7 .inner .img-cont {
+    flex: 1;
+  }
+  .section7 .inner .img-cont img {
+    max-width: 13rem;
+  }
+  .section7 .inner #carousel .carousel-inner .carousel-item div {
+    gap: 5vh;
+    width: 45vw;
+  }
+  .section7 .inner #carousel .carousel-inner .carousel-item div img {
+    width: 15vw;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+  .section7 .inner {
+    flex-direction: column;
+  }
+  .section7 .inner .img-cont img {
+    max-width: 13rem;
+  }
+  .section7 .inner #carousel .carousel-inner .carousel-item div {
+    gap: 5vh;
+    width: 85vw;
+  }
+  .section7 .inner #carousel .carousel-inner .carousel-item div img {
+    width: 18vw;
+  }
+}

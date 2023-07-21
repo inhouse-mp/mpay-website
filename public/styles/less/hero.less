@@ -1,0 +1,313 @@
+@import "./tools.less";
+// STYLES FOR HERO SECTION
+
+.hero {
+  // GENERAL
+  margin-top: 8.16vh;
+  grid-gap: 10px;
+  padding: 2.58vh 6.51vw;
+  
+  border-bottom: 1px solid @platinum;
+  
+  
+  div {
+    &.hero-image {
+      margin-bottom: 3.65vh;
+    }
+    &.text {
+      h1 {
+        font-weight: bold;
+        font-size: 1.75rem !important;
+        color: @eerie-black;
+      }
+      p {
+        margin-bottom: 4.08vh;
+        color: @davy-gray;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 2.15vh;
+        a {
+          height: 5.58vh;
+          border-radius: 3.43vh;
+          border: 1px solid;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 2.79vw;
+          text-decoration: none;
+
+          color: @eerie-black;
+          border: 1px solid;
+          &.blue {
+            background-color: @persian_blue;
+            border: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+    &.logos {
+      margin-top: 8.7vh;
+      grid-area: logos;
+
+      p {
+        margin-bottom: 2.58vh;
+        color: @davy-gray;
+      }
+
+      .images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.93vh;
+
+        .image {
+          flex: 1;
+          min-width: 23vw;
+          height: 60px;
+          background-color: #f2f2f2;
+        }
+      }
+    }
+  }
+  // DESKTOP
+  @media @desktop_or_larger {
+    margin-top: 8.24vh;
+    padding: 6.72vh 5.96vw;
+    padding-bottom: 0px;
+
+    div {
+      &.flex-container {
+        max-width: 1304px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 6.3vw;
+        .hero-image {
+          // width: 33.6vw;
+          // border: 1px solid red;
+          display: flex;
+          justify-content: flex-end;
+          img{
+            width: 33.56vw;
+            max-width: 580px;
+          }
+          flex: 1;
+        }
+        .text {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          h1 {
+            font-size: 3.38rem !important;
+          }
+          p{
+            max-width: 460px;
+            font-size: 1rem;
+          }
+          .buttons {
+            flex-direction: row;
+            a {
+              height: 52px;
+              width: auto;
+              padding-left: 2vw;
+              padding-right: 2vw;
+              gap: 1vw;
+              border-radius: 4vw;
+              
+            }
+          }
+        }
+      }
+
+      &.logos {
+        max-width: 1304px;
+        margin: 5.25vh auto 6.27vh auto;
+        
+        .images {
+          max-width: 35vw;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 1.15vh;
+
+          .image {
+            min-width: 5vw;
+            max-width: 5vw;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+  // TAB LANDSCAPE
+  @media @tab_landscape {
+    div {
+      &.flex-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 6vh 0vw;
+        .hero-image {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+        .text {
+          flex: 1;
+
+          h1 {
+            font-size: 2.7rem !important;
+          }
+          .buttons {
+            flex-direction: row;
+            a {
+              padding-left: 2.5vw;
+              padding-right: 2.5vw;
+              gap: 1.5;
+            }
+          }
+        }
+      }
+      &.logos {
+        margin-top: 7vh;
+        max-width: 85vw;
+        .images {
+          align-items: center;
+          .image {
+            min-width: auto;
+            max-width: 7vw;
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+  // TAB
+  @media @tab_portrait {
+    margin-top: 9.57vw;
+    padding: 6.44vh 5.96vw;
+    div {
+      &.flex-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 6.3vw;
+        .hero-image {
+          height: 100%;
+          // width: 33.6vw;
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-bottom: 0vh;
+          img {
+            max-width: 35vw;
+          }
+        }
+        .text {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          h1 {
+            font-size: 2rem !important;
+          }
+          p {
+            margin-bottom: 2.78vh;
+          }
+          .buttons {
+            flex-direction: row;
+            a {
+              height: 3.81vh;
+              width: auto;
+              padding-left: 2vw;
+              padding-right: 2vw;
+              gap: 1vw;
+              border-radius: 4vw;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+
+      &.logos {
+        margin-top: 15.47vh;
+        .images {
+          max-width: auto;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 1.15vh;
+
+          .image {
+            min-width: 8vw;
+            max-width: 8vw;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+  // MOBILE LANDSCAPE
+  @media @mobile_landscape {
+    margin-top: 11.5vh;
+    padding: 6.72vh 5.96vw;
+
+    div {
+      &.flex-container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 6.3vw;
+        .hero-image {
+          // width: 33.6vw;
+        }
+        .text {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          h1 {
+            font-size: 2.7rem !important;
+          }
+          .buttons {
+            flex-direction: row;
+            a {
+              height: 52px;
+              width: auto;
+              padding-left: 2vw;
+              padding-right: 2vw;
+              gap: 1vw;
+              border-radius: 4vw;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+
+      &.logos {
+        .images {
+          max-width: 35vw;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 2.15vh;
+
+          .image {
+            min-width: 8vw;
+            max-width: 8vw;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+  // MOBILE PORTRAIT
+  @media @mobile_portrait {
+    border-bottom: none;
+  }
+}

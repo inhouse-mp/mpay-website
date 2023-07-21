@@ -1,0 +1,97 @@
+/*
+.links {
+    .show-on-mobile('none');
+    border: 1px solid red;
+    padding: 10px;
+  }
+*/
+@import "../../assets/GTWalsheimPro/stylesheet.css";
+.blue-black {
+  color: #1e1e1e;
+}
+.blue-black .blue {
+  color: #192cd1;
+}
+.davy-gray {
+  color: #525252;
+}
+.bred {
+  border: 1px solid red;
+}
+.section8 {
+  border-top: 1px solid #e3e3e3;
+  padding: 6.45vh 6.02vw;
+}
+.section8 h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.3vh;
+  margin-top: 6vh;
+}
+.section8 h4 {
+  font-weight: bold;
+}
+.section8 h4,
+.section8 p {
+  color: #111B79 !important;
+}
+.section8 .inner {
+  max-width: 1304px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.section8 .inner > div {
+  max-width: 411px;
+  padding: 4.3vh 0vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.61vh;
+  align-items: center;
+}
+.section8 .inner > div .img-cont {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.section8 .inner > div p {
+  text-align: center;
+  line-height: 170%;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .section8 {
+    padding: 2.45vh 6.02vw;
+  }
+  .section8 .inner {
+    column-gap: 2vw;
+  }
+  .section8 .inner > div {
+    max-width: 255px;
+  }
+  .section8 .inner > div img {
+    transform: scale(0.7);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section8 .inner {
+    column-gap: 2vw;
+  }
+  .section8 .inner > div img {
+    transform: scale(0.8);
+  }
+  .section8 .inner > div p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+  .section8 .inner {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 3.15vh;
+  }
+  .section8 .inner > div {
+    max-width: 80vw;
+    margin: auto;
+  }
+}

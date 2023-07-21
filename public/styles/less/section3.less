@@ -1,0 +1,212 @@
+@import "./tools.less";
+
+.section3 {
+  //
+  margin: 7.43vh auto auto auto;
+  border-bottom: 1px solid @platinum;
+  padding-bottom: 7.34vh;
+  
+  .inner {
+    background-color: @ghost-white;
+    max-width: 1304px;
+    margin: auto;
+
+    & > .text {
+      display: flex;
+      flex-direction: column;
+      max-width: 527px;
+      margin: auto;
+      margin-bottom: 6.54vh;
+      .top-text {
+        background: @blue-gradient;
+        display: inline-block;
+        margin: auto;
+        color: @blue-light;
+
+        padding: 1.07vh 1.04vw;
+        font-weight: 500;
+        border-radius: 20px;
+        margin-bottom: 1.43vh;
+      }
+      h1 {
+        font-size: 1.88rem;
+        text-align: center;
+        margin-bottom: 1.07vh;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-start;
+      gap: 4.86vw;
+      .product {
+        // border: 1px solid red;
+        min-width: 312px;
+        max-width: 18.6vw;
+        .img-cont {
+          background-color: @blue-pale;
+          padding: 3.58vh 2.78vw;
+          min-height: 20vh;
+          
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 24px 24px 0px 0px;
+          img {
+            width: 90px;
+          }
+        }
+        .text {
+          background-color: @mid-gray;
+          border-radius: 0px 0px 24px 24px;
+          padding: 2.51vh 1.85vw;
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.07vh;
+          }
+          p {
+            color: @davy-gray;
+            margin-bottom: 2.07vh;
+          }
+          a {
+            text-decoration: none;
+            font-weight: bold;
+            color: @persian_blue;
+          }
+        }
+      }
+    }
+  }
+  // Desktop
+  @media @desktop_or_larger {
+    padding-bottom: 7.34vh;
+  }
+  // TAB LANDSCAPE
+  @media @tab_landscape {
+    .inner {
+      .text {
+        .top-text {
+          padding: 1.3vh 1.7vw;
+        }
+      }
+      .products {
+        padding: 0vh 6.51vw;
+        .product {
+          min-width: 25.3vw;
+          .img-cont {
+            min-height: 20vh;
+          }
+          .text {
+            h3 {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  // TAB
+  @media @tab_portrait {
+    .inner {
+      .text {
+        .top-text {
+          padding: 1.3vh 2.7vw;
+          border-radius: 25px;
+        }
+      }
+      .products {
+        // padding: 0vh 6.51vw;
+        gap: 1vw;
+        .product {
+          min-width: 29.3vw;
+          transform: scale(0.95);
+          .img-cont {
+            min-height: 15vh;
+            max-height: 15vh;
+          }
+          .text {
+            h3 {
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  // MOBILE LANDSCAPE
+  @media @mobile_landscape {
+    padding-bottom: 7.3vh;
+    .inner {
+      & > .text {
+        .top-text {
+          font-size: 0.9rem;
+          padding: 1.3vh 1.7vw;
+        }
+      }
+      .products {
+        gap: 5vw;
+        .product {
+          min-width: 25vw;
+          .img-cont {
+            height: 30vh;
+          }
+          .text {
+            h3 {
+              font-size: 1.1rem;
+            }
+            p,
+            a {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  // MOBILE PORTRAIT
+  @media @mobile_portrait {
+    padding: 0vh 6.51vw;
+    border-bottom: 1px solid transparent;
+    .inner {
+      & > .text {
+        .top-text {
+          font-size: 0.9rem;
+          padding: 1.5vh 4.7vw;
+          border-radius: 25px;
+        }
+      }
+      .products{
+        
+        gap: 6vh;
+        .product{
+            .img-cont{
+                padding: 8.8vh;
+            }
+            .text{
+                background-color: transparent;
+                padding: 3.43vh;
+                h3{
+                    font-size: 1.4rem;
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                    margin-bottom: 2.15vh;
+
+                }
+                a{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+      }
+    }
+  }
+}

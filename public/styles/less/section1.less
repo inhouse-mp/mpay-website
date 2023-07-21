@@ -1,0 +1,109 @@
+@import "./tools.less";
+
+.section1 {
+  // GENERAL
+  
+  
+  .text{
+    max-width: 537px;
+    margin: auto;
+    h1,p{
+        text-align: center;
+    }
+    h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    p{
+
+    }
+  }
+  .blocks{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10.2vh;
+    div{
+        
+        max-width: 330px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .img-cont{
+            
+            min-height: 150px;
+            max-height: 150px;
+            margin-bottom: 2.86vh;
+        }
+        img{
+            flex-shrink: 0;
+            
+            margin: auto !important;
+        }
+        h2,p{
+            text-align: center;
+        }
+        h2{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+    }
+  }
+  // DESKTOP
+  @media @desktop_or_larger {
+    max-width: 1304px;
+    margin: auto;
+    padding: 10.91vh 0vw;
+    
+  }
+  // TAB LANDSCAPE
+  @media @tab_landscape {
+    padding: 10.91vh 6.51vw;
+    .blocks{
+        gap:1vw;
+    }
+  }
+  // TAB
+  @media @tab_portrait {
+    padding: 10.91vh 5.96vw;
+    .blocks{
+      // transform: scale(0.9);
+        gap: 4.5vw;
+        margin-top: 8.2vh;
+        div{
+            
+        }
+    }
+  }
+  // MOBILE LANDSCAPE
+  @media @mobile_landscape {
+    padding: 10.91vh 6.51vw;
+    .blocks{
+        gap: 5vw;
+        div{
+          h2{
+            font-size: 1.1rem;
+          }
+          p{
+            font-size: .9rem;
+          }
+        }
+    }
+  }
+  // MOBILE PORTRAIT
+  @media @mobile_portrait {
+    background-color: @blue-fade;
+    
+    padding: 7.73vh 6.54vw;
+    .blocks{
+        margin-top: 12.2vh;
+        flex-direction: column;
+        align-items: center;
+        gap: 6.87vh;
+        div{
+            
+        }
+    }
+  }
+}

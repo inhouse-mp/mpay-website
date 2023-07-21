@@ -1,0 +1,280 @@
+/*
+.links {
+    .show-on-mobile('none');
+    border: 1px solid red;
+    padding: 10px;
+  }
+*/
+@import "../../assets/GTWalsheimPro/stylesheet.css";
+.blue-black {
+  color: #1e1e1e;
+}
+.blue-black .blue {
+  color: #192cd1;
+}
+.davy-gray {
+  color: #525252;
+}
+.nav-cont {
+  position: fixed;
+  top: 0px;
+  background-color: #FBFBFB !important;
+  border-bottom: 1px solid #e3e3e3;
+  z-index: 999;
+  width: 100vw;
+}
+nav {
+  height: 8.15vh;
+  box-sizing: border-box;
+  padding: 0vh 6.51vw 0vh 6.51vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .links {
+  display: flex;
+}
+nav .links a {
+  color: black;
+  text-decoration: none;
+}
+nav .buttons .country {
+  appearance: none;
+  outline: none;
+  width: 3.4vw;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+nav .buttons .country option {
+  display: flex;
+}
+nav .buttons .hamburger {
+  background-color: transparent;
+  border: none;
+  width: 8.84vw;
+  display: grid;
+  row-gap: 0.54vh;
+}
+nav .buttons .hamburger #open {
+  display: block;
+}
+nav .buttons .hamburger #close {
+  display: none;
+}
+nav .buttons .hamburger.show #close {
+  display: block;
+}
+nav .buttons .hamburger.show #open {
+  display: none;
+}
+nav .buttons .cta {
+  background-color: #192cd1;
+  color: white;
+  text-decoration: none;
+}
+nav .dropdown .btn {
+  padding: 0px !important;
+  border: none;
+}
+nav .dropdown .btn :focus {
+  outline: none;
+  border: none;
+}
+nav .dropdown .dropdown-menu {
+  border-radius: 1.43vh;
+  border: 1px solid #9fa2b4 !important;
+  padding: 3vh;
+  white-space: nowrap;
+  background-color: white;
+}
+nav .dropdown .dropdown-menu .title {
+  color: #1e1e1e;
+  margin-bottom: 5.1vh;
+}
+nav .dropdown .dropdown-menu .item {
+  display: flex;
+  align-items: center;
+  gap: 0.69vw;
+  margin-bottom: 4.36vh;
+}
+nav .dropdown .dropdown-menu .item:last-child {
+  margin-bottom: 0px;
+}
+nav .dropdown .dropdown-menu .item .text {
+  display: inherit;
+  flex-direction: column;
+  gap: 0px;
+}
+nav .dropdown .dropdown-menu .item .text .main {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+nav .dropdown .dropdown-menu .item .text .sub {
+  display: none;
+  color: #525252;
+}
+nav .dropdown .dropdown-menu .services-grid {
+  display: flex;
+  gap: 3.47vw;
+}
+nav .dropdown.mobile .dropdown-menu {
+  box-sizing: border-box;
+  height: 92.2vh;
+  overflow-y: scroll;
+  border: none;
+  width: 100vw;
+  margin-top: 0.8vh !important;
+  border-radius: 0px;
+  padding: 4.72vh 5.7vw;
+}
+nav .dropdown.mobile .dropdown-menu .title {
+  margin-bottom: 3.86vh;
+}
+nav .dropdown.mobile .dropdown-menu .item {
+  gap: 2.79vw;
+  margin-bottom: 5.36vh;
+}
+@media screen and (min-width: 1081px)  {
+  nav {
+    height: 8.77vh;
+    padding: 0vh ;
+    max-width: 1304px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav .logo img {
+    width: 9.26vw;
+  }
+  nav .links {
+    gap: 1.35vw;
+  }
+  nav .buttons {
+    gap: 0.75vw;
+  }
+  nav .buttons .hamburger {
+    display: none;
+  }
+  nav .buttons .cta {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.48vh;
+    box-sizing: border-box;
+    padding: 1.34vw 1.54vw;
+    border-radius: 1.85vw;
+  }
+  nav .buttons .country {
+    display: inline-block;
+    height: 3.13vh;
+    width: 3.13vh;
+  }
+  nav .dropdown.mobile {
+    display: none;
+  }
+}
+@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  nav .links {
+    gap: 1.5vw;
+  }
+  nav .links .dropdown .btn {
+    font-size: 0.9rem !important;
+  }
+  nav .buttons .hamburger {
+    display: none;
+  }
+  nav .buttons .cta {
+    display: inline-block;
+    padding: 1.1vh 2.73vw 1.1vh 2.73vw;
+    border-radius: 2.34vh;
+    font-size: 0.9rem;
+  }
+  nav .dropdown.mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  nav {
+    height: 9.57vw;
+  }
+  nav .logo img {
+    width: 15.59vw;
+  }
+  nav .links {
+    gap: 1.13vw;
+    justify-content: space-between;
+  }
+  nav .links .dropdown button {
+    font-size: 0.8rem;
+  }
+  nav .links .dropdown .dropdown-menu {
+    margin-top: -45px !important;
+    transform: scale(0.7, 0.7) !important;
+  }
+  nav .buttons .hamburger {
+    display: none;
+  }
+  nav .buttons .cta {
+    font-size: 0.8rem;
+    padding: 1.1vh 2.73vw 1.1vh 2.73vw;
+    border-radius: 2.34vh;
+  }
+  nav .dropdown.mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  nav {
+    height: 11.5vh;
+    padding: 0vh 6vw 0vh 6vw;
+  }
+  nav .logo img {
+    width: 10.26vw;
+  }
+  nav .links {
+    gap: 1.35vw;
+  }
+  nav .links .dropdown button {
+    font-size: 0.8rem;
+  }
+  nav .links .dropdown .dropdown-menu {
+    margin-top: -35px !important;
+    transform: scale(0.7, 0.7) !important;
+  }
+  nav .buttons {
+    gap: 0.75vw;
+    align-items: center;
+  }
+  nav .buttons .hamburger {
+    display: none;
+  }
+  nav .buttons .cta {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.48vh;
+    box-sizing: border-box;
+    padding: 1.34vw 1.54vw;
+    border-radius: 40px;
+    font-size: 0.8rem;
+  }
+  nav .buttons .country {
+    display: inline-block;
+    height: 3.13vh;
+    width: 3.13vh;
+  }
+  nav .dropdown.mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+  nav .logo img {
+    width: 38.37vw;
+  }
+  nav .links {
+    display: none;
+  }
+  nav .buttons .country,
+  nav .buttons .cta {
+    display: none;
+  }
+}

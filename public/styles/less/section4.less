@@ -1,0 +1,240 @@
+@import "./tools.less";
+
+.section4-cont {
+  border-bottom: 1px solid @platinum;
+
+}
+.section4 {
+  max-width: 1304px;
+  margin: auto;
+  margin-top: 8.24vh;
+  padding-bottom: 8.24vh;
+
+  #carousel {
+    display: flex !important;
+    gap: 8.8vw;
+    .header-text{
+      &.mobile {
+        display: none;
+      }
+    }
+    .carousel-indicators [data-bs-target] {
+      width: auto;
+      height: auto;
+      opacity: 1;
+    }
+    .carousel-indicators {
+      position: relative !important;
+      left: auto;
+      top: auto;
+      flex: 1;
+      display: flex !important;
+      flex-direction: column;
+      margin: 0px;
+      .header-text {
+        margin-bottom: 2.86vh;
+      }
+
+      button {
+        position: relative !important;
+        text-indent: 0;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        gap: 1.04vw;
+        margin-bottom: auto;
+        &:last-child {
+          margin-bottom: 0vh;
+        }
+
+        h4 {
+          font-size: 1.25rem;
+          font-weight: 500;
+        }
+
+        .text,
+        .num {
+          h4,
+          p {
+            color: @davy-gray;
+            text-align: left;
+          }
+        }
+        &:not(.active) {
+          .num > h4 {
+            color: @davy-gray !important;
+          }
+          .text > h4 {
+            color: @davy-gray !important;
+          }
+        }
+        &.active {
+          .num > h4 {
+            color: @persian_blue;
+          }
+
+          .text {
+            h4 {
+              color: @eerie-black;
+              font-weight: 700;
+            }
+            p {
+              color: @davy-gray !important;
+            }
+          }
+        }
+      }
+    }
+    .carousel-inner {
+      flex: 1;
+      .carousel-item {
+        // border: 1px solid red;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .carousel-caption {
+          display: none !important;
+          position: relative !important;
+          top: 0px;
+          left: 0px;
+
+          h1 {
+            font-size: 2.2rem;
+            font-weight: 500 !important;
+          }
+          color: black !important;
+        }
+      }
+    }
+  }
+
+  // Desktop
+  @media @desktop_or_larger {
+    #carousel {
+      .carousel-indicators {
+        button {
+          margin-bottom: 2.95vh;
+        }
+      }
+    }
+  }
+
+  // TAB LANDSCAPE
+  @media @tab_landscape {
+    // padding: ;
+
+    padding: 0px 6.51vw;
+    padding-bottom: 8.24vh;
+  }
+
+  // TAB
+  @media @tab_portrait {
+    padding: 0px 5.96vw;
+    #carousel {
+      gap: 3.89vw;
+      .carousel-indicators {
+        p {
+          margin-bottom: 0px !important;
+        }
+        .header-text {
+          h1 {
+            font-size: 1.4rem;
+          }
+        }
+        button {
+          margin-bottom: 0px;
+          h4 {
+            font-size: 1.15rem;
+          }
+        }
+      }
+    }
+  }
+
+  // MOBILE LANDSCAPE
+  @media @mobile_landscape {
+    padding: 0vh 6vw 7.34vh 6vw;
+    #carousel {
+      // border: 1px solid red;
+      .carousel-indicators {
+        .header-text {
+          margin-bottom: 0px;
+          h1 {
+            font-size: 1.8rem;
+          }
+        }
+        button {
+          margin-bottom: 0px;
+          h4 {
+            font-size: 1.1rem;
+          }
+          p {
+            font-size: 0.9rem;
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  // MOBILE PORTRAIT
+  @media @mobile_portrait {
+    padding-bottom: 170px;
+    #carousel {
+      flex-direction: column-reverse;
+      gap: 0vh;
+      .header-text {
+        display: none;
+        &.mobile {
+          display: block;
+          padding: 0vh 6.51vw 0vh 6.51vw;
+        }
+      }
+
+      .carousel-indicators {
+        flex-direction: row;
+        gap: 12px;
+        margin-top: -160px;
+        button {
+          background-color: @platinum;
+          &.active {
+            background-color: @davy-gray;
+          }
+          &[data-bs-target] {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+          }
+
+          h4,
+          p {
+            display: none;
+          }
+        }
+      }
+      .carousel-inner {
+        .carousel-item {
+          flex-direction: column;
+          .carousel-caption {
+            padding: 3.43vh 6.51vw 0vh 6.51vw;
+            display: flex !important;
+            flex-direction: column;
+            position: relative !important;
+            top: 0px;
+            left: 0px;
+
+            margin-top: 80px;
+
+            h5 {
+              font-size: 1.25rem;
+              font-weight: 500 !important;
+            }
+            color: black !important;
+          }
+        }
+      }
+    }
+  }
+}

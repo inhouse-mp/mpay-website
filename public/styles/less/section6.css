@@ -1,0 +1,248 @@
+/*
+.links {
+    .show-on-mobile('none');
+    border: 1px solid red;
+    padding: 10px;
+  }
+*/
+@import "../../assets/GTWalsheimPro/stylesheet.css";
+.blue-black {
+  color: #1e1e1e;
+}
+.blue-black .blue {
+  color: #192cd1;
+}
+.davy-gray {
+  color: #525252;
+}
+.bred {
+  border: 1px solid red;
+}
+.section6 {
+  background-color: #F6F6FF;
+  padding: 8.15vh 6.05vw;
+}
+.section6 .inner {
+  max-width: 1304px;
+  margin: auto;
+  display: flex;
+  height: 500px;
+}
+.section6 .inner > div {
+  flex: 1;
+  height: 100%;
+}
+.section6 .inner > div.one {
+  border-radius: 24px 0px 0px 24px;
+  background: linear-gradient(225deg, #4043FF 0%, #192CD1 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section6 .inner > div.one div {
+  display: inline-block;
+  width: 275px;
+  height: 100%;
+  max-height: 192px;
+  padding: 3.5vh 2.31vw;
+  border-radius: 12px;
+}
+.section6 .inner > div.one div p {
+  font-size: 0.85rem;
+  margin-bottom: 0px;
+}
+.section6 .inner > div.one div h1 {
+  color: #192cd1;
+  font-weight: bold;
+  margin-top: 2.3vh;
+  margin-bottom: 0.5vh;
+}
+.section6 .inner > div.one div.first {
+  background: #F6F6FF;
+}
+.section6 .inner > div.one div.second {
+  background: linear-gradient(225deg, #4043FF 0%, #192CD1 100%);
+  border: 1.5px solid #E8EBFF;
+  margin-left: -40px;
+  margin-top: 86px;
+  color: white;
+}
+.section6 .inner > div.one div.second h1 {
+  color: white;
+}
+.section6 .inner > div.two {
+  border-radius: 0px 24px 24px 0px;
+  border: 1px solid #BEC5FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section6 .inner > div.two h1,
+.section6 .inner > div.two p,
+.section6 .inner > div.two div {
+  max-width: 360px;
+}
+.section6 .inner > div.two h1 {
+  font-size: 2rem;
+}
+.section6 .inner > div.two p {
+  margin-bottom: 2.86vh;
+}
+.section6 .inner > div.two div {
+  width: 100%;
+  display: flex;
+}
+.section6 .inner > div.two div a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  height: 5.37vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  color: #1e1e1e;
+}
+.section6 .inner > div.two div a.first {
+  background: #192cd1;
+  color: white;
+}
+@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section6 .inner > div.one div {
+    width: 21vw;
+    padding: 2.49vh 1.5vw;
+    height: 160px;
+  }
+  .section6 .inner > div.one div.second {
+    margin-top: 90px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .section6 .inner {
+    height: 400px;
+  }
+  .section6 .inner > div.one div {
+    width: 23.5vw;
+    transform: scale(0.9);
+    padding: 2.49vh 1.2vw;
+    height: 140px;
+  }
+  .section6 .inner > div.one div p {
+    font-size: 0.8rem;
+  }
+  .section6 .inner > div.one div h1 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
+  .section6 .inner > div.one div.second {
+    margin-top: 90px;
+  }
+  .section6 .inner > div.two h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    width: 90%;
+  }
+  .section6 .inner > div.two p {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+  .section6 .inner > div.two .links {
+    width: 90%;
+  }
+  .section6 .inner > div.two .links a {
+    height: auto;
+    padding: 1.3vh 3vw;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section6 .inner {
+    height: 300px;
+  }
+  .section6 .inner > div {
+    width: auto;
+  }
+  .section6 .inner > div.one div {
+    max-height: 140px;
+    width: auto;
+  }
+  .section6 .inner > div.one div h1 {
+    margin-top: 4vh;
+  }
+  .section6 .inner > div.one div p {
+    font-size: 0.8rem;
+  }
+  .section6 .inner > div.one div.second {
+    margin-left: -30px;
+  }
+  .section6 .inner > div.two h1 {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+  .section6 .inner > div.two p {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+  .section6 .inner > div.two .links {
+    width: 80%;
+  }
+  .section6 .inner > div.two .links a {
+    height: auto;
+    font-size: 0.8rem;
+    padding: 2vh 0vw;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+  .section6 .inner {
+    flex-direction: column;
+    height: auto;
+  }
+  .section6 .inner > div.one {
+    border-radius: 24px 24px 0px 0px;
+    padding: 8.27vh 6vw;
+    display: block;
+  }
+  .section6 .inner > div.one div {
+    transform: scale(0.8);
+    width: 75vw;
+    max-width: 210px;
+  }
+  .section6 .inner > div.one div p {
+    font-size: 0.8rem;
+  }
+  .section6 .inner > div.one div .first {
+    float: left;
+    margin-right: 10px;
+  }
+  .section6 .inner > div.one div.second {
+    margin-top: -100px;
+    margin-right: -10px;
+    float: right;
+  }
+  .section6 .inner > div.two {
+    padding: 6.3vh 9.7vw;
+    border-radius: 0px 0px 24px 24px;
+  }
+  .section6 .inner > div.two h1,
+  .section6 .inner > div.two p,
+  .section6 .inner > div.two .links {
+    width: 100%;
+  }
+  .section6 .inner > div.two h1 {
+    font-size: 1.5rem;
+  }
+  .section6 .inner > div.two p {
+    font-size: 0.9rem;
+  }
+  .section6 .inner > div.two div {
+    flex-direction: column;
+    gap: 2vh;
+    margin-top: 3.43vh;
+  }
+  .section6 .inner > div.two div a {
+    font-size: 0.9rem;
+    height: 6vh;
+    padding: 2.15vh;
+  }
+}

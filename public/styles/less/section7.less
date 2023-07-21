@@ -1,0 +1,176 @@
+@import "./tools.less";
+
+.section7 {
+  max-width: 1304px;
+  margin: auto;
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4.3vh;
+    margin-top: 6vh;
+  }
+  .inner {
+    // .bred;
+    display: flex;
+    gap: 15vw;
+    .img-cont {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 18.75rem;
+      }
+    }
+    #carousel {
+      //   .bred;
+      flex: 1;
+      .carousel-inner {
+        .carousel-item {
+          div {
+            width: 24.31vw;
+            aspect-ratio: 1;
+            border-radius: 8px;
+            background: @ghost-dark;
+            margin: auto;
+            box-sizing: border-box;
+            padding: 0vh 1.62vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2.15vh;
+            img {
+              width: 4.17vw;
+              aspect-ratio: 1;
+              border-radius: 8px;
+              background: white;
+            }
+            p {
+              color: @eerie-black;
+              text-align: center;
+            }
+          }
+          &.active {
+            div {
+              background: @persian_blue;
+              p {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      .controller-cont {
+        display: flex;
+        justify-content: center;
+        margin-top: 2.86vh;
+        gap: 1.16vw;
+        button {
+          position: relative !important;
+          width: 48px;
+          aspect-ratio: 1;
+          border-radius: 50%;
+          border: 1px solid @persian_blue;
+          &.rght {
+            img {
+              display: block;
+              transform: rotate(90);
+            }
+          }
+        }
+      }
+    }
+    margin-bottom: 6vh;
+  }
+
+  //   TAB LANDSCAPE
+  @media @tab_landscape {
+    padding: 0vh 6.05vw;
+    .inner {
+      #carousel {
+        .carousel-inner {
+          .carousel-item {
+            div {
+              width: 30vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // TAB PORTRAIT
+  @media @tab_portrait {
+    padding: 0vh 6.05vw;
+    .inner {
+      gap: 5vw;
+      .img-cont{
+        img{
+          max-width: 15rem;
+        }
+      }
+      #carousel {
+        .carousel-inner {
+          .carousel-item {
+            div {
+              width: 20rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // MOBILE LANDSCAPE
+  @media @mobile_landscape {
+    .inner {
+      flex-direction: row;
+      gap:0px;
+      .img-cont{
+        flex: 1;
+        img{
+          max-width: 13rem;
+        }
+      }
+      #carousel {
+        .carousel-inner {
+          .carousel-item {
+            div {
+              gap: 5vh;
+              width: 45vw;
+              img{
+                width: 15vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // MOBILE PORTRAIT
+  @media @mobile_portrait {
+    // padding: 0vh 6.05vw;
+    .inner {
+      flex-direction: column;
+      .img-cont{
+        img{
+          max-width: 13rem;
+        }
+      }
+      #carousel {
+        .carousel-inner {
+          .carousel-item {
+            div {
+              gap: 5vh;
+              width: 85vw;
+              img{
+                width: 18vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

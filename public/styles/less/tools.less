@@ -1,0 +1,82 @@
+@import "./mq.less";
+
+// show-on classes are used to toggle visibility on different viewports
+
+// show on only mobile
+
+// params: none,block,flex
+
+.show-on-mobile(@display) {
+  display: none;
+  @media @mobile_portrait {
+    display: @display;
+  }
+}
+
+// example
+/*
+.links {
+    .show-on-mobile('none');
+    border: 1px solid red;
+    padding: 10px;
+  }
+*/
+
+// show on only tab
+.show-on-tab(@display) {
+  @media @tab_portrait {
+    display: @display;
+  }
+}
+
+//-------------------------------------------------------------------------------------
+
+// COLORS
+@persian_blue: #192cd1;
+@blue-fade: #F6F6FF;
+@periwinkle: #BEC5FF;
+@blue-light:#E8EBFF;
+@blue-pale:#EAECFF;
+@blue-dark:#111B79;
+@platinum: #e3e3e3;
+@davy-gray: #525252;
+@light-gray: #9fa2b4;
+@mid-gray:#F4F4F4;
+@ghost-white: #FBFBFB;
+@ghost-dark: #F3F5FF;
+@eerie-black: #1e1e1e;
+@blue-gradient: linear-gradient(225deg, #4043FF 0%, #192CD1 100%);
+
+
+//FONTS
+
+@import "../../assets/GTWalsheimPro/stylesheet.css";
+
+.main-font() {
+  font-family: "GT Walsheim Pro";
+}
+
+.main-ulta-font() {
+  font-family: "GT Walsheim Pro Ultra";
+  font-weight: 800;
+}
+
+.hide() {
+  display: none;
+}
+
+.blue-black {
+  color: @eerie-black;
+  .blue {
+    color: @persian_blue;
+  }
+}
+
+.davy-gray {
+  color: @davy-gray;
+}
+
+//-------------------------------------------------------------------------------------
+.bred{
+  border: 1px solid red;
+}

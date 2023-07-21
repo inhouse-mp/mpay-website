@@ -1,0 +1,214 @@
+/*
+.links {
+    .show-on-mobile('none');
+    border: 1px solid red;
+    padding: 10px;
+  }
+*/
+@import "../../assets/GTWalsheimPro/stylesheet.css";
+.blue-black {
+  color: #1e1e1e;
+}
+.blue-black .blue {
+  color: #192cd1;
+}
+.davy-gray {
+  color: #525252;
+}
+.section4-cont {
+  border-bottom: 1px solid #e3e3e3;
+}
+.section4 {
+  max-width: 1304px;
+  margin: auto;
+  margin-top: 8.24vh;
+  padding-bottom: 8.24vh;
+}
+.section4 #carousel {
+  display: flex !important;
+  gap: 8.8vw;
+}
+.section4 #carousel .header-text.mobile {
+  display: none;
+}
+.section4 #carousel .carousel-indicators [data-bs-target] {
+  width: auto;
+  height: auto;
+  opacity: 1;
+}
+.section4 #carousel .carousel-indicators {
+  position: relative !important;
+  left: auto;
+  top: auto;
+  flex: 1;
+  display: flex !important;
+  flex-direction: column;
+  margin: 0px;
+}
+.section4 #carousel .carousel-indicators .header-text {
+  margin-bottom: 2.86vh;
+}
+.section4 #carousel .carousel-indicators button {
+  position: relative !important;
+  text-indent: 0;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 1.04vw;
+  margin-bottom: auto;
+}
+.section4 #carousel .carousel-indicators button:last-child {
+  margin-bottom: 0vh;
+}
+.section4 #carousel .carousel-indicators button h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.section4 #carousel .carousel-indicators button .text h4,
+.section4 #carousel .carousel-indicators button .num h4,
+.section4 #carousel .carousel-indicators button .text p,
+.section4 #carousel .carousel-indicators button .num p {
+  color: #525252;
+  text-align: left;
+}
+.section4 #carousel .carousel-indicators button:not(.active) .num > h4 {
+  color: #525252 !important;
+}
+.section4 #carousel .carousel-indicators button:not(.active) .text > h4 {
+  color: #525252 !important;
+}
+.section4 #carousel .carousel-indicators button.active .num > h4 {
+  color: #192cd1;
+}
+.section4 #carousel .carousel-indicators button.active .text h4 {
+  color: #1e1e1e;
+  font-weight: 700;
+}
+.section4 #carousel .carousel-indicators button.active .text p {
+  color: #525252 !important;
+}
+.section4 #carousel .carousel-inner {
+  flex: 1;
+}
+.section4 #carousel .carousel-inner .carousel-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.section4 #carousel .carousel-inner .carousel-item .carousel-caption {
+  display: none !important;
+  position: relative !important;
+  top: 0px;
+  left: 0px;
+  color: black !important;
+}
+.section4 #carousel .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 2.2rem;
+  font-weight: 500 !important;
+}
+@media screen and (min-width: 1081px)  {
+  .section4 #carousel .carousel-indicators button {
+    margin-bottom: 2.95vh;
+  }
+}
+@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section4 {
+    padding: 0px 6.51vw;
+    padding-bottom: 8.24vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .section4 {
+    padding: 0px 5.96vw;
+  }
+  .section4 #carousel {
+    gap: 3.89vw;
+  }
+  .section4 #carousel .carousel-indicators p {
+    margin-bottom: 0px !important;
+  }
+  .section4 #carousel .carousel-indicators .header-text h1 {
+    font-size: 1.4rem;
+  }
+  .section4 #carousel .carousel-indicators button {
+    margin-bottom: 0px;
+  }
+  .section4 #carousel .carousel-indicators button h4 {
+    font-size: 1.15rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section4 {
+    padding: 0vh 6vw 7.34vh 6vw;
+  }
+  .section4 #carousel .carousel-indicators .header-text {
+    margin-bottom: 0px;
+  }
+  .section4 #carousel .carousel-indicators .header-text h1 {
+    font-size: 1.8rem;
+  }
+  .section4 #carousel .carousel-indicators button {
+    margin-bottom: 0px;
+  }
+  .section4 #carousel .carousel-indicators button h4 {
+    font-size: 1.1rem;
+  }
+  .section4 #carousel .carousel-indicators button p {
+    font-size: 0.9rem;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+  .section4 {
+    padding-bottom: 170px;
+  }
+  .section4 #carousel {
+    flex-direction: column-reverse;
+    gap: 0vh;
+  }
+  .section4 #carousel .header-text {
+    display: none;
+  }
+  .section4 #carousel .header-text.mobile {
+    display: block;
+    padding: 0vh 6.51vw 0vh 6.51vw;
+  }
+  .section4 #carousel .carousel-indicators {
+    flex-direction: row;
+    gap: 12px;
+    margin-top: -160px;
+  }
+  .section4 #carousel .carousel-indicators button {
+    background-color: #e3e3e3;
+  }
+  .section4 #carousel .carousel-indicators button.active {
+    background-color: #525252;
+  }
+  .section4 #carousel .carousel-indicators button[data-bs-target] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+  .section4 #carousel .carousel-indicators button h4,
+  .section4 #carousel .carousel-indicators button p {
+    display: none;
+  }
+  .section4 #carousel .carousel-inner .carousel-item {
+    flex-direction: column;
+  }
+  .section4 #carousel .carousel-inner .carousel-item .carousel-caption {
+    padding: 3.43vh 6.51vw 0vh 6.51vw;
+    display: flex !important;
+    flex-direction: column;
+    position: relative !important;
+    top: 0px;
+    left: 0px;
+    margin-top: 80px;
+    color: black !important;
+  }
+  .section4 #carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 1.25rem;
+    font-weight: 500 !important;
+  }
+}

@@ -1,0 +1,290 @@
+/*
+.links {
+    .show-on-mobile('none');
+    border: 1px solid red;
+    padding: 10px;
+  }
+*/
+@import "../../assets/GTWalsheimPro/stylesheet.css";
+.blue-black {
+  color: #1e1e1e;
+}
+.blue-black .blue {
+  color: #192cd1;
+}
+.davy-gray {
+  color: #525252;
+}
+.hero {
+  margin-top: 8.16vh;
+  grid-gap: 10px;
+  padding: 2.58vh 6.51vw;
+  border-bottom: 1px solid #e3e3e3;
+}
+.hero div.hero-image {
+  margin-bottom: 3.65vh;
+}
+.hero div.text h1 {
+  font-weight: bold;
+  font-size: 1.75rem !important;
+  color: #1e1e1e;
+}
+.hero div.text p {
+  margin-bottom: 4.08vh;
+  color: #525252;
+}
+.hero div.text .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2.15vh;
+}
+.hero div.text .buttons a {
+  height: 5.58vh;
+  border-radius: 3.43vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.79vw;
+  text-decoration: none;
+  color: #1e1e1e;
+  border: 1px solid;
+}
+.hero div.text .buttons a.blue {
+  background-color: #192cd1;
+  border: none;
+  color: #fff;
+}
+.hero div.logos {
+  margin-top: 8.7vh;
+  grid-area: logos;
+}
+.hero div.logos p {
+  margin-bottom: 2.58vh;
+  color: #525252;
+}
+.hero div.logos .images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.93vh;
+}
+.hero div.logos .images .image {
+  flex: 1;
+  min-width: 23vw;
+  height: 60px;
+  background-color: #f2f2f2;
+}
+@media screen and (min-width: 1081px)  {
+  .hero {
+    margin-top: 8.24vh;
+    padding: 6.72vh 5.96vw;
+    padding-bottom: 0px;
+  }
+  .hero div.flex-container {
+    max-width: 1304px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 6.3vw;
+  }
+  .hero div.flex-container .hero-image {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+  }
+  .hero div.flex-container .hero-image img {
+    width: 33.56vw;
+    max-width: 580px;
+  }
+  .hero div.flex-container .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero div.flex-container .text h1 {
+    font-size: 3.38rem !important;
+  }
+  .hero div.flex-container .text p {
+    max-width: 460px;
+    font-size: 1rem;
+  }
+  .hero div.flex-container .text .buttons {
+    flex-direction: row;
+  }
+  .hero div.flex-container .text .buttons a {
+    height: 52px;
+    width: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    gap: 1vw;
+    border-radius: 4vw;
+  }
+  .hero div.logos {
+    max-width: 1304px;
+    margin: 5.25vh auto 6.27vh auto;
+  }
+  .hero div.logos .images {
+    max-width: 35vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1.15vh;
+  }
+  .hero div.logos .images .image {
+    min-width: 5vw;
+    max-width: 5vw;
+    height: 45px;
+  }
+}
+@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .hero div.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 6vh 0vw;
+  }
+  .hero div.flex-container .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .hero div.flex-container .text {
+    flex: 1;
+  }
+  .hero div.flex-container .text h1 {
+    font-size: 2.7rem !important;
+  }
+  .hero div.flex-container .text .buttons {
+    flex-direction: row;
+  }
+  .hero div.flex-container .text .buttons a {
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    gap: 1.5;
+  }
+  .hero div.logos {
+    margin-top: 7vh;
+    max-width: 85vw;
+  }
+  .hero div.logos .images {
+    align-items: center;
+  }
+  .hero div.logos .images .image {
+    min-width: auto;
+    max-width: 7vw;
+    flex: 1;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .hero {
+    margin-top: 9.57vw;
+    padding: 6.44vh 5.96vw;
+  }
+  .hero div.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 6.3vw;
+  }
+  .hero div.flex-container .hero-image {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0vh;
+  }
+  .hero div.flex-container .hero-image img {
+    max-width: 35vw;
+  }
+  .hero div.flex-container .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero div.flex-container .text h1 {
+    font-size: 2rem !important;
+  }
+  .hero div.flex-container .text p {
+    margin-bottom: 2.78vh;
+  }
+  .hero div.flex-container .text .buttons {
+    flex-direction: row;
+  }
+  .hero div.flex-container .text .buttons a {
+    height: 3.81vh;
+    width: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    gap: 1vw;
+    border-radius: 4vw;
+    font-size: 0.8rem;
+  }
+  .hero div.logos {
+    margin-top: 15.47vh;
+  }
+  .hero div.logos .images {
+    max-width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1.15vh;
+  }
+  .hero div.logos .images .image {
+    min-width: 8vw;
+    max-width: 8vw;
+    height: 45px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .hero {
+    margin-top: 11.5vh;
+    padding: 6.72vh 5.96vw;
+  }
+  .hero div.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 6.3vw;
+  }
+  .hero div.flex-container .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero div.flex-container .text h1 {
+    font-size: 2.7rem !important;
+  }
+  .hero div.flex-container .text .buttons {
+    flex-direction: row;
+  }
+  .hero div.flex-container .text .buttons a {
+    height: 52px;
+    width: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    gap: 1vw;
+    border-radius: 4vw;
+    font-size: 0.8rem;
+  }
+  .hero div.logos .images {
+    max-width: 35vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.15vh;
+  }
+  .hero div.logos .images .image {
+    min-width: 8vw;
+    max-width: 8vw;
+    height: 45px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+  .hero {
+    border-bottom: none;
+  }
+}
