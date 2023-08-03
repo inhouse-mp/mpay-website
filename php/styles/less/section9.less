@@ -1,0 +1,232 @@
+@import "./tools.less";
+
+.section9 {
+  background: @blue-gradient;
+  padding: 8.44rem 6.08vw;
+  .inner {
+    max-width: 1304px;
+    margin: auto;
+    display: flex;
+    // grid-template-columns: auto auto;
+    & > div {
+      flex: 1;
+      &.text {
+        color: white;
+        max-width: 27vw;
+        h2 {
+          font-weight: bold;
+          font-size: 2rem;
+        }
+        p {
+          margin-bottom: 2rem;
+          max-width: 25vw;
+        }
+        .links {
+          a {
+            text-decoration: none;
+            width: 11.57vw;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: 5.37vh;
+            border-radius: 1.85vw;
+            &:first-child {
+              background: white;
+              color: @persian_blue;
+            }
+            color: white;
+          }
+        }
+      }
+      &.cards {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.16vw;
+        .card {
+          width: auto;
+          max-width: 280px;
+          padding: 2.86vh 1.39vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          img {
+            width: 30px;
+            margin-bottom: 2.15vh;
+          }
+          h4 {
+            font-size: 18px;
+            font-weight: bold;
+          }
+          p {
+            margin-bottom: 0.8rem;
+          }
+          a {
+            text-decoration: none;
+            color: @persian_blue;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  //   TAB LANDSCAPE
+  @media @tab_landscape {
+    .inner {
+      flex-direction: column;
+      & > div {
+        &.text {
+          max-width: 400px;
+          h2 {
+            font-size: 1.6rem;
+          }
+          p {
+            max-width: none;
+          }
+          a {
+            width: auto;
+            padding: 1vh 2vw;
+          }
+          .links {
+            a {
+              width: auto;
+            }
+          }
+        }
+        &.cards {
+          .card {
+            padding: 0.5vh 1.39vw;
+            // max-width: 290px;
+          }
+        }
+      }
+    }
+  }
+
+  @media @tab_portrait {
+    .inner {
+      gap: 2vw;
+      & > div {
+        &.text {
+          max-width: 38vw;
+          h2 {
+            font-size: 1.1rem;
+          }
+          p {
+            max-width: none;
+          }
+
+          .links {
+            display: flex;
+            gap: 1vw;
+            a {
+              border-radius: 4vw;
+              padding: 0.8vh 2vw;
+              width: auto;
+              height: auto;
+            }
+          }
+        }
+        &.cards {
+          // display: none;
+          .card {
+            padding: 1vh 1.39vw;
+            h4 {
+              font-size: 0.8rem;
+            }
+            p,
+            a {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media @mobile_landscape {
+    padding: 6.44rem 6.08vw;
+    .inner {
+      gap: 2vw;
+      & > div {
+        &.text {
+          max-width: 38vw;
+          h2 {
+            font-size: 1.32rem;
+          }
+          p {
+            max-width: none;
+          }
+
+          .links {
+            display: flex;
+            gap: 1vw;
+            a {
+              border-radius: 4vw;
+              padding: 1.5vh 2vw;
+              width: auto;
+              height: auto;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        &.cards {
+          // display: none;
+          .card {
+            padding: 1vh 1.39vw;
+            h4 {
+              font-size: 0.8rem;
+            }
+            p,
+            a {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media @mobile_portrait {
+    padding: 4rem 6.08vw;
+    .inner {
+      flex-direction: column;
+      & > div {
+        &.text {
+          max-width: none;
+          h2 {
+            font-size: 1.5rem;
+          }
+          p {
+            max-width: none;
+          }
+          .links{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5.5rem;
+            a{
+              width: 100%;
+              border-radius: 6vw;
+            }
+          }
+        }
+        &.cards{
+          flex-direction: column;
+          gap: 1.2rem;
+          .card{
+            width: 100%;
+            max-width: none;
+            padding: 2rem 1.5rem;
+            img{
+              margin-bottom: 2rem;
+            }
+            p{
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

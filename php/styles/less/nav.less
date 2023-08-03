@@ -1,0 +1,345 @@
+@import "./tools.less";
+// STYLES FOR NAVIGATION BAR
+
+.nav-cont{
+  position: fixed;
+  top: 0px;
+  background-color: @ghost-white !important;
+  border-bottom: 1px solid @platinum;
+
+  z-index: 999;
+  width: 100vw;
+  
+}
+
+nav {
+  // border: 1px solid red;
+  //    GENERAL
+  height: 4.94rem;
+  box-sizing: border-box;
+  padding: 0vh 6.51vw 0vh 6.51vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    a{
+      img{
+        width: 9.94rem;
+      }
+
+    }
+  }
+
+  .links {
+    // border: 1px solid red;
+    display: flex;
+    a {
+      color: black;
+      text-decoration: none;
+      
+    }
+  }
+
+  .buttons {
+    .country {
+      appearance: none;
+      outline: none;
+      width: 3.4vw;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      option {
+        display: flex;
+      }
+    }
+    .hamburger {
+      background-color: transparent;
+      border: none;
+      width: 8.84vw;
+      display: grid;
+      row-gap: 0.54vh;
+      transform: scale(.8);
+
+      #open {
+        display: block;
+      }
+      #close {
+        display: none;
+      }
+      &.show {
+        #close {
+          display: block;
+        }
+        #open {
+          display: none;
+        }
+      }
+    }
+    .cta {
+      background-color: @persian_blue;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  // OVERRIDE BOOTSTRAP
+  .dropdown {
+    
+    .btn {
+      padding: 0px !important;
+      &.show{
+        border: none;
+        border-color: transparent;
+      }
+      
+      :focus {
+        outline: none;
+        border: none;
+      }
+    }
+    .dropdown-menu {
+      border-radius: 1.43vh;
+      border: 1px solid @light-gray !important;
+      padding: 3vh;
+      white-space: nowrap;
+      background-color: white;
+      .title {
+        color: @eerie-black;
+        margin-bottom: 2.13rem;
+      }
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        .icon {
+          svg{
+            width: 3rem;
+          }
+        }
+        .text {
+          display: inherit;
+          flex-direction: column;
+          gap: 0px;
+          .main {
+            font-size: 1.25rem;
+            font-weight: bold;
+          }
+          .sub {
+            display: none;
+            color: @davy-gray;
+          }
+        }
+      }
+      .services-grid {
+        display: flex;
+        gap: 3.47vw;
+      }
+    }
+    &.mobile {
+      .dropdown-menu {
+        border: none;
+        box-sizing: border-box;
+        height: 100vh ;
+        overflow-y: scroll;
+        width: 100vw;
+        margin-top: 0.8vh !important;
+        border-radius: 0px;
+        padding: 4.72vh 5.7vw;
+
+        .title {
+          margin-bottom: 2.125rem;
+        }
+        
+        .item {
+          
+          gap: 0.75rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    &.lg {
+    }
+  }
+
+  //   DESKTOP
+  @media @desktop_or_larger {
+    height: 8.77vh;
+    padding: 0vh ;
+    max-width: 1304px;
+    margin-left: auto;
+    margin-right: auto;
+    .logo {
+      img {
+        width: 9.26vw;
+      }
+    }
+    .links {
+      gap: 2rem;
+    }
+    .buttons {
+      gap: 0.75vw;
+      .hamburger {
+        .hide();
+      }
+      .cta {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.125rem;
+        box-sizing: border-box;
+        padding: 1.3rem 1.7rem;
+        border-radius: 1.85vw;
+        font-size: 0.94rem;
+      }
+      .country {
+        display: inline-block;
+        height: 3.13vh;
+        width: 3.13vh;
+      }
+    }
+    .dropdown.mobile {
+      display: none;
+    }
+  };
+
+  //   TAB LANDSCAPE
+  @media @tab_landscape {
+    max-width: 1126px;
+    .links {
+      gap: 1rem;
+      .dropdown{
+        .btn{
+          font-size: 0.9rem !important;
+
+          
+        }
+      }
+    }
+    .buttons {
+      .hamburger {
+        .hide();
+      }
+      .cta {
+        display: inline-block;
+        padding: 1.1vh 2.73vw 1.1vh 2.73vw;
+        border-radius: 2.34vh;
+        font-size: .9rem;
+      }
+    }
+    .dropdown.mobile {
+      display: none;
+    }
+  }
+
+  //    TAB
+  @media @tab_portrait {
+    height: 9.57vw;
+    
+        // padding: 0vh 11.72vw 0vh 11.72vw;
+    .logo {
+      img {
+        width: 15.59vw;
+      }
+    }
+    .links {
+      gap: .9rem;
+      justify-content: space-between;
+      .dropdown {
+        
+        button {
+          font-size: 0.8rem;
+          &::after{
+            display: none;
+          }
+        }
+        .dropdown-menu {
+          margin-top: -45px !important;
+          transform: scale(0.7, 0.7) !important;
+        }
+      }
+    }
+    .buttons {
+      .hamburger {
+        .hide();
+      }
+      .cta {
+        font-size: 0.8rem;
+        padding: 1.1vh 2.73vw 1.1vh 2.73vw;
+        border-radius: 2.34vh;
+      }
+    }
+    .dropdown.mobile {
+      display: none;
+    }
+  }
+
+  //   MOBILE LANDSCAPE
+  @media @mobile_landscape {
+    height: 4.125rem;
+    padding: 0vh 6vw 0vh 6vw;
+    .logo {
+      img {
+        width: 10.26vw;
+      }
+    }
+    .links {
+      gap: 1.35vw;
+      .dropdown {
+        button {
+          font-size: 0.8rem;
+        }
+        .dropdown-menu {
+          margin-top: -35px !important;
+          transform: scale(0.7, 0.7) !important;
+        }
+      }
+    }
+    .buttons {
+      gap: 0.75vw;
+      align-items: center;
+      .hamburger {
+        .hide();
+      }
+      .cta {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5rem;
+        box-sizing: border-box;
+        padding: 1.34vw 2.54vw;
+        border-radius: 40px;
+        font-size: 0.8rem;
+      }
+      .country {
+        display: inline-block;
+        height: 3.13vh;
+        width: 3.13vh;
+      }
+    }
+    .dropdown.mobile {
+      display: none;
+    }
+  }
+
+  //    MOBILE PORTRAIT
+  @media @mobile_portrait {
+    .logo {
+      img {
+        width: 38.37vw;
+      }
+    }
+    .links {
+      .hide();
+    }
+    .buttons {
+      .country,
+      .cta {
+        .hide();
+      }
+    }
+  }
+}

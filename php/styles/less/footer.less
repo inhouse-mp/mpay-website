@@ -1,0 +1,53 @@
+@import "./tools.less";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+//   border: 1px solid red;
+  padding: 5.9rem 6.08vw;
+  gap: 8.25rem;
+  section {
+    width: 100%;
+    max-width: 1304px;
+    // border: 1px solid;
+    &.main {
+      display: flex;
+      gap: 16.25rem;
+      & > div {
+        // border: 1px solid red;
+      }
+      .logo{
+        img{
+            width: 10.93rem;
+            margin-bottom: 2.625rem;
+        }
+        p{
+            max-width: 14rem;
+        }
+      }
+      .links {
+        flex: 1;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 4.5rem;
+        h4{
+            color: @persian_blue;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.125rem;
+        }
+        .cont{
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+            a{
+                color: @davy-gray;
+                text-decoration: none;
+            }
+        }
+      }
+    }
+  }
+}

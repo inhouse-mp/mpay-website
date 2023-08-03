@@ -1,0 +1,87 @@
+@import "./tools.less";
+
+.section8 {
+  border-top: 1px solid @platinum;
+  padding: 6.45vh 6.02vw;
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+
+    margin-bottom: 1.3vh;
+    margin-top: 6vh;
+  }
+  h4 {
+    font-weight: bold;
+  }
+  h4,
+  p {
+    color: @blue-dark !important;
+  }
+
+  .inner {
+    max-width: 1304px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    & > div {
+      max-width: 411px;
+      padding: 4.3vh 0vw;
+      display: flex;
+      flex-direction: column;
+      gap: 1.61vh;
+      align-items: center;
+      .img-cont {
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+      p {
+        text-align: center;
+        line-height: 170%;
+      }
+    }
+  }
+
+  //   TAB LANDSCAPE
+  @media @tab_portrait {
+    padding: 2.45vh 6.02vw;
+    .inner {
+      column-gap: 2vw;
+      & > div {
+        max-width: 255px;
+        img {
+          transform: scale(0.7);
+        }
+      }
+    }
+  }
+
+  // MOBILE LANDSCAPE
+  @media @mobile_landscape {
+    .inner {
+      column-gap: 2vw;
+      & > div {
+        img {
+          transform: scale(0.8);
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  // MOBILE PORTRAIT
+  @media @mobile_portrait {
+    .inner {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto;
+      row-gap: 3.15vh;
+      & > div {
+        max-width: 80vw;
+        margin: auto;
+      }
+    }
+  }
+}

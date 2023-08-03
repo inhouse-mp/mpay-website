@@ -1,0 +1,167 @@
+@import "./tools.less";
+
+.section2 {
+  // GENERAL
+  display: flex;
+  background-color: @persian_blue;
+  .img-cont {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: @ghost-white !important;
+  }
+  .text {
+    flex: 1;
+    color: @blue-light;
+    background-image: url("../../assets/images/pattern-1.png");
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .inner {
+      display: inherit;
+      flex-direction: column;
+      max-width: 600px;
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1.07vh;
+      }
+      p {
+        margin-bottom: 1.79vh;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 5.32vw;
+        row-gap: 10px;
+        margin: 0px;
+        padding: 0px;
+        max-width: 400px;
+        li {
+          padding: 0px;
+          margin: 0px;
+          list-style-type: none;
+          font-size: 30px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          span {
+            font-size: 16px;
+          }
+          span.circle {
+            background-color: @blue-light;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+          }
+        }
+      }
+      a {
+        margin-top: 2.85vh;
+        text-decoration: none;
+        color: @blue-light;
+        font-weight: bold;
+      }
+    }
+  }
+  // DESKTOP
+  @media @desktop_or_larger {
+  }
+  // TAB LANDSCAPE
+  @media @tab_landscape {
+    .img-cont {
+      img {
+        width: 40vw;
+      }
+    }
+    .text {
+      .inner{
+        h2{
+          font-size: 1.8rem;
+        }
+      }
+      height: auto;
+      padding: 13.5vh 3.5vw;
+      h2{
+        font-size: 1.7rem;
+      }
+    }
+  }
+  // TAB
+  @media @tab_portrait {
+    .img-cont {
+      img {
+        width: 50vw;
+      }
+    }
+
+    .text {
+      .inner {
+        // padding: 0vh 5.7vw;
+        transform: scale(0.9);
+
+        h2 {
+          font-size: 1.4rem;
+        }
+        ul{
+          row-gap: .8rem;
+          li{
+            span{
+
+              font-size: .9rem;
+            }
+          }
+        }
+      }
+      height: auto;
+      padding: 5vh 0vw;
+    }
+  }
+
+  // MOBILE LANDSCAPE
+  @media @mobile_landscape {
+    .img-cont{
+        max-width: 50vw;
+        img{
+
+            max-width: 50vw;
+        }
+    }
+    .text{
+        height: auto;
+        padding: 13vh 3vw;
+        .inner{
+            transform: scale(0.8);
+            h2{
+              font-size: 1.7rem;
+              margin-bottom: .8rem;
+            }
+            p{
+              
+              margin-bottom: .8rem;
+            }
+            ul{
+              margin-bottom: 1rem;
+
+            }
+        }
+    }
+  }
+
+  // MOBILE PORTRAIT
+  @media @mobile_portrait {
+    flex-direction: column;
+    margin-top: 13.52vh;
+    img{
+        max-width: 100vw;
+    }
+    .text{
+        padding: 6.79vh 6.51vw;
+    }
+  }
+}

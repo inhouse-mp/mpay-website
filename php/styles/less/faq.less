@@ -1,0 +1,99 @@
+@import "./tools.less";
+
+.faqs-cont {
+  background-color: #121212;
+  padding: 9.5rem 6.08vw;
+  box-sizing: border-box;
+  @media @mobile_landscape {
+    padding: 5.5rem 6.08vw;
+  }
+}
+.faqs {
+  display: flex;
+  max-width: 1304px;
+  margin-left: auto;
+  margin-right: auto;
+
+  & > div {
+    flex: 1;
+    h1 {
+      font-size: 2.5rem;
+      max-width: 390px;
+      color: white;
+      font-weight: bold;
+    }
+  }
+
+  .accordion {
+    background-color: transparent;
+    --bs-accordion-bg: transparent;
+    max-width: 39rem;
+    --bs-accordion-border-color: #e7e7e7;
+    .accordion-header {
+      background-color: transparent;
+    }
+    .accordion-button {
+      color: white;
+      padding: 2rem 0rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      &::after {
+        background-image: url("../../assets/svgs/chevron-down.svg");
+      }
+      &.show {
+        box-shadow: none;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+      &:not(.collapsed) {
+        background-color: transparent;
+        &::after {
+          background-image: url("../../assets/svgs/chevron-down.svg");
+        }
+      }
+    }
+    .accordion-body {
+      padding: 20px 0px;
+      line-height: 150%;
+      color: white;
+      font-size: 1.1rem;
+    }
+  }
+
+  @media @mobile_landscape {
+    & > div {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    .accordion {
+      .accordion-button {
+        font-size: 1rem;
+      }
+      .accordion-body {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  @media @mobile_portrait {
+    flex-direction: column;
+    gap: 6.25rem;
+    & > div{
+        h1{
+            font-size: 1.875rem;
+            text-align: center;
+        }
+    }
+
+    .accordion {
+        .accordion-button {
+          font-size: 1.125rem;
+        }
+        .accordion-body {
+          font-size: 0.9rem;
+        }
+      }
+  }
+}
