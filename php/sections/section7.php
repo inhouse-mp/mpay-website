@@ -11,22 +11,62 @@
                 <div class="carousel-item active">
                     <div class="">
                         <img src="" alt="">
-                        <p>Our Payment Solution supports a wide range of payment methods including bank cards, mobile wallets, USSD and online transfers</p>
+                        <p>Did you know that our payment solution supports a wide range of payment methods, including bank cards, mobile wallets, USSD and online transfers, giving your customers the flexibility to choose how they pay?</p>
+
                     </div>
                 </div>
                 <div class="carousel-item">
                 <div class="">
                         <img src="" alt="">
-                        <p>Our Payment Solution supports a wide range of payment methods including bank cards, mobile wallets, USSD and online transfers</p>
+                        <p>Did you know that our payment solution provides detailed analytics and reporting features, helping you gain valuable insights into customer behavior and transaction trends?</p>
+
                     </div>
                 </div>
+                
                 <div class="carousel-item">
                 <div class="">
                         <img src="" alt="">
-                        <p>Our Payment Solution supports a wide range of payment methods including bank cards, mobile wallets, USSD and online transfers</p>
+                        <p>Did you know that our payment solution supports multi-currency transactions, making it convenient for international businesses and enabling you to expand your customer base globally?</p>
+                    
+                    </div>
+                  </div>
+                
+                
+                <div class="carousel-item">
+                <div class="">
+                        <img src="" alt="">
+                        <p>Did you know that we have wordpress plugins for your consumption and our blog is available for you to know more about us and our services?</p>
+                    
                     </div>
                 </div>
-            </div>
+
+
+                <div class="carousel-item">
+                <div class="">
+                        <img src="" alt="">
+                        <p>Did you know that our payment solution offers a user-friendly dashboard where you can monitor and manage your transactions, refunds, and chargebacks in real-time?</p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                <div class="">
+                        <img src="" alt="">
+                        <p>Did you know that you can get instant settlements for your businesses and we can offer you membership cards for your customers?</p>
+                   </div>
+                </div>
+
+
+                <div class="carousel-item">
+                <div class="">
+                        <img src="" alt="">
+                        <p>Did you know that our payment solution offers advanced fraud detection and prevention mechanisms, providing an extra layer of security for your business and customers?</p>
+
+                    </div>
+                </div>
+                </div>
+                
+                        
 
             <div class="controller-cont">
                 <button class="carousel-control-prev arrow left" type="button" data-bs-target="#carousel" data-bs-slide="prev">
