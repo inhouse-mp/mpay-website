@@ -22,7 +22,6 @@
   position: fixed;
   top: 0px;
   background-color: #FBFBFB !important;
-  border-bottom: 1px solid #e3e3e3;
   z-index: 999;
   width: 100vw;
 }
@@ -247,14 +246,14 @@ nav .dropdown.mobile .dropdown-menu .item {
     height: 4.125rem;
     padding: 0vh 6vw 0vh 6vw;
   }
-  nav .logo img {
-    width: 10.26vw;
+  nav .logo a img {
+    width: 70% !important;
   }
   nav .links {
     gap: 1.35vw;
   }
   nav .links .dropdown button {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   nav .links .dropdown .dropdown-menu {
     margin-top: -35px !important;
@@ -534,6 +533,12 @@ nav .dropdown.mobile .dropdown-menu .item {
     flex-direction: row-reverse;
     gap: 6.3vw;
   }
+  .hero div.flex-container .hero-image {
+    text-align: center !important;
+  }
+  .hero div.flex-container .hero-image img {
+    width: 80%;
+  }
   .hero div.flex-container .text {
     flex: 1;
     display: flex;
@@ -541,10 +546,10 @@ nav .dropdown.mobile .dropdown-menu .item {
     justify-content: center;
   }
   .hero div.flex-container .text h1 {
-    font-size: 1.7rem !important;
+    font-size: 1.5rem !important;
   }
   .hero div.flex-container .text p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .hero div.flex-container .text .buttons {
     flex-direction: row;
@@ -555,6 +560,7 @@ nav .dropdown.mobile .dropdown-menu .item {
     padding-left: 2vw;
     padding-right: 2vw;
     gap: 1vw;
+    font-size: 0.5rem !important;
     border-radius: 4vw;
     font-size: 0.8rem;
   }
@@ -685,10 +691,10 @@ nav .dropdown.mobile .dropdown-menu .item {
     padding: 10.91vh 6.51vw;
   }
   .section1 .text h1 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .section1 .text p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .section1 .blocks {
     gap: 5vw;
@@ -697,7 +703,7 @@ nav .dropdown.mobile .dropdown-menu .item {
     transform: scale(0.8);
   }
   .section1 .blocks div h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .section1 .blocks div p {
     font-size: 0.8rem;
@@ -853,7 +859,7 @@ nav .dropdown.mobile .dropdown-menu .item {
     transform: scale(0.8);
   }
   .section2 .text .inner h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: 0.8rem;
   }
   .section2 .text .inner p {
@@ -1034,6 +1040,9 @@ nav .dropdown.mobile .dropdown-menu .item {
     font-size: 0.9rem;
     padding: 1.3vh 1.7vw;
   }
+  .section3 .inner > .text h1 {
+    font-size: 1.7rem;
+  }
   .section3 .inner .products {
     gap: 5vw;
   }
@@ -1050,11 +1059,11 @@ nav .dropdown.mobile .dropdown-menu .item {
     width: 4rem;
   }
   .section3 .inner .products .product .text h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .section3 .inner .products .product .text p,
   .section3 .inner .products .product .text a {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
@@ -1239,16 +1248,16 @@ nav .dropdown.mobile .dropdown-menu .item {
     margin-bottom: 0px;
   }
   .section4 #carousel .carousel-indicators .header-text h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .section4 #carousel .carousel-indicators button {
     margin-bottom: 0px;
   }
   .section4 #carousel .carousel-indicators button h4 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .section4 #carousel .carousel-indicators button p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: 0px;
   }
 }
@@ -1533,8 +1542,11 @@ nav .dropdown.mobile .dropdown-menu .item {
   .section6 .inner > div {
     width: auto;
   }
+  .section6 .inner > div.one .first {
+    width: 50%;
+  }
   .section6 .inner > div.one div {
-    max-height: 140px;
+    max-height: 150px;
     width: auto;
   }
   .section6 .inner > div.one div h1 {
@@ -1544,10 +1556,10 @@ nav .dropdown.mobile .dropdown-menu .item {
     font-size: 0.8rem;
   }
   .section6 .inner > div.one div.second {
-    margin-left: -30px;
+    margin-left: -40px;
   }
   .section6 .inner > div.two h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 80%;
   }
   .section6 .inner > div.two p {
@@ -1808,7 +1820,7 @@ nav .dropdown.mobile .dropdown-menu .item {
     transform: scale(0.8);
   }
   .section8 .inner > div p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
@@ -2158,6 +2170,40 @@ footer section.main .links .cont {
 footer section.main .links .cont a {
   color: #525252;
   text-decoration: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  footer section.main {
+    flex-direction: column;
+    gap: 3.25rem !important;
+  }
+}
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  footer section.main {
+    flex-direction: column;
+    gap: 3.25rem !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
+  footer section.main {
+    flex-direction: column;
+    gap: 3.25rem;
+  }
+  footer section.main .links {
+    grid-template-columns: auto auto;
+  }
+  footer section.main .links div.align {
+    margin: 0 auto;
+  }
+  footer section.main .links .footer-legal,
+  footer section.main .links .footer-contact {
+    grid-column: 1 / span 2;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  footer section.main {
+    flex-direction: column;
+    gap: 3.25rem !important;
+  }
 }
 * {
   font-family: "GT Walsheim Pro";

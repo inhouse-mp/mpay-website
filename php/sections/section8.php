@@ -6,7 +6,7 @@
                 <img src="./assets/images/Stability.png" alt="">
             </div>
             <h4>Scalability</h4>
-            <p> With Marasoft Pay, you can scale your business efficiently. Our robust infrastructure provides you with a range of features and services that can be applied in various industries, driving business growth and expanding your horizons.</p>
+            <p> Marasoft Pay enables efficient scaling with versatile features. Utilize our robust infrastructure for growth across various industries.</p>
 
         </div>
         <div class="item">
@@ -14,14 +14,14 @@
                 <img src="./assets/images/Safelock.png" alt="">
             </div>
             <h4>Security</h4>
-            <p>The security of our system is of utmost importance to us. We ensure the protection of sensitive information through data encryption, both while it is being transmitted and while it is stored.</p>
+            <p>Ensuring system integrity is paramount. Our comprehensive data security measures offer utmost protection for sensitive information.</p>
         </div>
         <div class="item">
             <div class="img-cont">
                 <img src="./assets/images/Scale.png" alt="">
             </div>
             <h4>Stability</h4>
-            <p>We are dedicated to providing reliable and uninterrupted service by constantly monitoring and maintaining the stability of our payment system. We understand the complexities involved in online payments and strive to deliver error-free service 24/7.</p>
+            <p>We ensure round-the-clock reliability by vigilantly stabilizing our payment system, guaranteeing seamless, error-free online transactions.</p>
 
 
         </div>

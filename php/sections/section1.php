@@ -16,7 +16,7 @@
                 <img src="./assets/images/api.png" alt="">
             </div>
             <h2>Unlimited API Calls</h2>
-            <p>Unlimited access to resources that allow you to build your applications without limits</p>
+            <p>Unlimited access to resources that allow you to build easily scalable applications</p>
         </div>
         <div>
             <div class="img-cont">

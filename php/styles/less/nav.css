@@ -22,7 +22,6 @@
   position: fixed;
   top: 0px;
   background-color: #FBFBFB !important;
-  border-bottom: 1px solid #e3e3e3;
   z-index: 999;
   width: 100vw;
 }
@@ -147,7 +146,7 @@ nav .dropdown.mobile .dropdown-menu .item {
   gap: 0.75rem;
   margin-bottom: 2rem;
 }
-@media screen and (min-width: 1181px)  {
+@media screen and (min-width: 1195px)  {
   nav {
     height: 8.77vh;
     padding: 0vh ;
@@ -186,7 +185,7 @@ nav .dropdown.mobile .dropdown-menu .item {
     display: none;
   }
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   nav {
     max-width: 1126px;
   }
@@ -247,14 +246,14 @@ nav .dropdown.mobile .dropdown-menu .item {
     height: 4.125rem;
     padding: 0vh 6vw 0vh 6vw;
   }
-  nav .logo img {
-    width: 10.26vw;
+  nav .logo a img {
+    width: 70% !important;
   }
   nav .links {
     gap: 1.35vw;
   }
   nav .links .dropdown button {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   nav .links .dropdown .dropdown-menu {
     margin-top: -35px !important;

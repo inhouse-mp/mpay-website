@@ -32,6 +32,7 @@ footer {
         display: grid;
         grid-template-columns: auto auto auto;
         row-gap: 4.5rem;
+        
         h4{
             color: @persian_blue;
             font-size: 1.5rem;
@@ -48,6 +49,59 @@ footer {
             }
         }
       }
+    }
+  }
+
+
+
+
+
+
+
+  // TAB
+  @media @tab_portrait {
+    section.main {
+      flex-direction: column;
+      gap: 3.25rem !important;
+
+    }
+  }
+
+  // TAB LANDSCAPE
+  @media @tab_landscape {
+    section.main {
+      flex-direction: column;
+      gap: 3.25rem !important;
+    }
+  }
+
+  // MOBILE PORTRAIT
+  @media @mobile_portrait {
+    
+    section.main {
+      flex-direction: column;
+      gap: 3.25rem;
+
+      .links{
+        grid-template-columns: auto auto;
+        // grid-gap: 3rem;
+        div.align{
+          margin: 0 auto;
+        }
+
+        .footer-legal, .footer-contact{
+          grid-column: 1 / span 2;
+        }
+      }
+    }
+    
+  }
+
+  // MOBILE LANDSCAPE
+  @media @mobile_landscape {
+    section.main {
+      flex-direction: column;
+      gap: 3.25rem !important;
     }
   }
 }

@@ -6,7 +6,7 @@
         <div class="text">
             <!-- Simplified payment solutions for (Businesses, Organizations, Enterprises) -->
             <h1 class="blue-black">Simplified payment solutions for <span class="blue">your business.</span></h1>
-            <p class="davy-gray">Marasoft Pay provides a secure and seamless financial solution for businesses</p>
+            <p class="davy-gray">Marasoft Pay provides secure and seamless financial solutions for your businesses</p>
             <div class="buttons">
                 <a class="blue">
                     <span>Create free account </span>

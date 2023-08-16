@@ -1,4 +1,4 @@
-<div class="section6">
+<div class="section6" style="border: 2px solid red">
     <div class="inner">
         <div class="one">
             <div class="first">
@@ -18,7 +18,7 @@
         </div>
         <div class="two">
             <h1>Pricing (Nigeria & Kenya)</h1>
-            <p>Whether you are handling the Nigerian Naira or Kenyan Shillings our pricing system will help you win.</p>
+            <p>Whether you are transacting in Nigerian Naira or Kenyan Shillings our pricing system will help you win.</p>
             <div class="links"><a class="first" href="">View Pricing</a><a href="">Contact Sales</a></div>
         </div>
     </div>

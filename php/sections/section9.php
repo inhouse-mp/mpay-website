@@ -1,8 +1,8 @@
 <div class="section9">
     <div class="inner">
         <div class="text">
-            <h2>Integrate with us through our easy to use API or via Dashboard.</h2>
-            <p>Our platform offers seamless integration options to suit different user needs.</p>
+            <h2>Seamless integration options to suit different use cases.</h2>
+            <p>Connect with us either through our developer-friendly API integration or via our intuitive Dashboard interface.</p>
             <div class="links">
                 <a href="">Create an account</a>
                 <a href="">Contact Sales</a>
@@ -18,7 +18,7 @@
             <div class="card">
                 <img src="./assets/images/product-docs.png" alt="">
                 <h4>For Non-Technical Users</h4>
-                <p>Integrate with us via a user-friendly dashboard interface.</p>
+                <p>Leverage our services through our user-friendly dashboard.</p>
                 <a href="">Access Dashboard</a>
             </div>
         </div>

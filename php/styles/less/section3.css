@@ -177,6 +177,9 @@
     font-size: 0.9rem;
     padding: 1.3vh 1.7vw;
   }
+  .section3 .inner > .text h1 {
+    font-size: 1.7rem;
+  }
   .section3 .inner .products {
     gap: 5vw;
   }
@@ -193,11 +196,11 @@
     width: 4rem;
   }
   .section3 .inner .products .product .text h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .section3 .inner .products .product .text p,
   .section3 .inner .products .product .text a {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
