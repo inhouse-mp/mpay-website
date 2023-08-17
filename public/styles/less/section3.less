@@ -2,10 +2,11 @@
 
 .section3 {
   //
-  margin: 7.43vh auto auto auto;
+  margin: 5.125rem auto auto auto;
   border-bottom: 1px solid @platinum;
   padding-bottom: 7.34vh;
-  
+  // border: 1px solid red;
+
   .inner {
     background-color: @ghost-white;
     max-width: 1304px;
@@ -14,9 +15,9 @@
     & > .text {
       display: flex;
       flex-direction: column;
-      max-width: 527px;
+      max-width: 32.9375rem;
       margin: auto;
-      margin-bottom: 6.54vh;
+      margin-bottom: 4.5rem;
       .top-text {
         background: @blue-gradient;
         display: inline-block;
@@ -30,6 +31,7 @@
       }
       h1 {
         font-size: 1.88rem;
+        font-weight: bold;
         text-align: center;
         margin-bottom: 1.07vh;
       }
@@ -42,30 +44,38 @@
       flex-wrap: wrap;
       justify-content: center;
       align-content: flex-start;
-      gap: 4.86vw;
+      gap: 5.25rem;
       .product {
         // border: 1px solid red;
-        min-width: 312px;
-        max-width: 18.6vw;
+        min-width: 19.5rem;
+        max-width: 19.5rem;
         .img-cont {
           background-color: @blue-pale;
-          padding: 3.58vh 2.78vw;
-          min-height: 20vh;
-          
+          // padding: 3.58vh 2.78vw;
+          min-height: 12.5rem;
           display: flex;
           justify-content: center;
           align-items: center;
-          border-radius: 24px 24px 0px 0px;
+          border-radius: 1.5rem 1.5rem 0px 0px;
           img {
-            width: 90px;
+            // border: 1px solid red;
+            width: 5.26rem;
           }
         }
+
+        .mpay-cards{
+          img {
+            // border: 1px solid red;
+            width: 50% !important;
+          }
+        }
+        
         .text {
           background-color: @mid-gray;
           border-radius: 0px 0px 24px 24px;
           padding: 2.51vh 1.85vw;
           h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
             margin-bottom: 1.07vh;
           }
@@ -88,6 +98,7 @@
   }
   // TAB LANDSCAPE
   @media @tab_landscape {
+    padding-bottom: 5rem;
     .inner {
       .text {
         .top-text {
@@ -96,14 +107,19 @@
       }
       .products {
         padding: 0vh 6.51vw;
+        gap: 3vw;
         .product {
-          min-width: 25.3vw;
+          min-width: 16rem;
+          max-width: 16rem;
           .img-cont {
             min-height: 20vh;
+            img{
+              width: 4rem;
+            }
           }
           .text {
             h3 {
-              font-size: 1.3rem;
+              font-size: 1.2rem;
             }
           }
         }
@@ -112,26 +128,51 @@
   }
   // TAB
   @media @tab_portrait {
+    padding-bottom: 3rem;
     .inner {
       .text {
         .top-text {
           padding: 1.3vh 2.7vw;
           border-radius: 25px;
         }
+        h1 {
+          transform: scale(0.9);
+        }
+        margin-bottom: 2rem;
       }
       .products {
         // padding: 0vh 6.51vw;
-        gap: 1vw;
+        gap: .5vw;
+        padding: 0vh 6.51vw;
         .product {
-          min-width: 29.3vw;
-          transform: scale(0.95);
+          // min-width: 29.3vw;
+          transform: scale(0.9);
+          max-width: 13.5rem;
+          min-width: 13.5rem;
           .img-cont {
-            min-height: 15vh;
-            max-height: 15vh;
+            min-height: 12vh;
+            max-height: 12vh;
+            img {
+              width: 4rem;
+            }
+          }
+          .mpay-cards{
+            img {
+              // border: 1px solid red;
+              width: 100% !important;
+            }
           }
           .text {
+            padding: 2vh 1.8vw;
             h3 {
               font-size: 1.1rem;
+            }
+            p {
+              margin-bottom: 8px;
+              font-size: 0.8rem;
+            }
+            a {
+              font-size: 0.85rem;
             }
           }
         }
@@ -147,21 +188,31 @@
           font-size: 0.9rem;
           padding: 1.3vh 1.7vw;
         }
+
+        h1 {
+          font-size: 1.7rem;
+        }
       }
       .products {
         gap: 5vw;
         .product {
+          max-width: 25vw;
           min-width: 25vw;
+          width: 25vw;
           .img-cont {
-            height: 30vh;
+            max-height: 8.5rem;
+            min-height: 8.5rem;
+            img{
+              width: 4rem;
+            }
           }
           .text {
             h3 {
-              font-size: 1.1rem;
+              font-size: .9rem;
             }
             p,
             a {
-              font-size: 0.9rem;
+              font-size: 0.7rem;
             }
           }
         }
@@ -180,31 +231,29 @@
           border-radius: 25px;
         }
       }
-      .products{
-        
+      .products {
         gap: 6vh;
-        .product{
-            .img-cont{
-                padding: 8.8vh;
+        .product {
+          .img-cont {
+            padding: 8.8vh;
+          }
+          .text {
+            background-color: transparent;
+            padding: 3.43vh;
+            h3 {
+              font-size: 1.4rem;
+              text-align: center;
             }
-            .text{
-                background-color: transparent;
-                padding: 3.43vh;
-                h3{
-                    font-size: 1.4rem;
-                    text-align: center;
-                }
-                p{
-                    text-align: center;
-                    margin-bottom: 2.15vh;
-
-                }
-                a{
-                    display: block;
-                    width: 100%;
-                    text-align: center;
-                }
+            p {
+              text-align: center;
+              margin-bottom: 2.15vh;
             }
+            a {
+              display: block;
+              width: 100%;
+              text-align: center;
+            }
+          }
         }
       }
     }

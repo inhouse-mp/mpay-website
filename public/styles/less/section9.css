@@ -20,7 +20,7 @@
 }
 .section9 {
   background: linear-gradient(225deg, #4043FF 0%, #192CD1 100%);
-  padding: 12vh 6.08vw;
+  padding: 8.44rem 6.08vw;
 }
 .section9 .inner {
   max-width: 1304px;
@@ -87,6 +87,9 @@
   font-weight: bold;
 }
 @media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section9 .inner {
+    flex-direction: column;
+  }
   .section9 .inner > div.text {
     max-width: 400px;
   }
@@ -105,5 +108,118 @@
   }
   .section9 .inner > div.cards .card {
     padding: 0.5vh 1.39vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .section9 .inner {
+    gap: 2vw;
+  }
+  .section9 .inner > div.text {
+    max-width: 38vw;
+  }
+  .section9 .inner > div.text h2 {
+    font-size: 1.1rem;
+  }
+  .section9 .inner > div.text p {
+    max-width: none;
+  }
+  .section9 .inner > div.text .links {
+    display: flex;
+    gap: 1vw;
+  }
+  .section9 .inner > div.text .links a {
+    border-radius: 4vw;
+    padding: 0.8vh 2vw;
+    width: auto;
+    height: auto;
+  }
+  .section9 .inner > div.cards .card {
+    padding: 1vh 1.39vw;
+  }
+  .section9 .inner > div.cards .card h4 {
+    font-size: 0.8rem;
+  }
+  .section9 .inner > div.cards .card p,
+  .section9 .inner > div.cards .card a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section9 {
+    padding: 6.44rem 6.08vw;
+  }
+  .section9 .inner {
+    gap: 2vw;
+  }
+  .section9 .inner > div.text {
+    max-width: 38vw;
+  }
+  .section9 .inner > div.text h2 {
+    font-size: 1.32rem;
+  }
+  .section9 .inner > div.text p {
+    max-width: none;
+  }
+  .section9 .inner > div.text .links {
+    display: flex;
+    gap: 1vw;
+  }
+  .section9 .inner > div.text .links a {
+    border-radius: 4vw;
+    padding: 1.5vh 2vw;
+    width: auto;
+    height: auto;
+    font-size: 0.8rem;
+  }
+  .section9 .inner > div.cards .card {
+    padding: 1vh 1.39vw;
+  }
+  .section9 .inner > div.cards .card h4 {
+    font-size: 0.8rem;
+  }
+  .section9 .inner > div.cards .card p,
+  .section9 .inner > div.cards .card a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+  .section9 {
+    padding: 4rem 6.08vw;
+  }
+  .section9 .inner {
+    flex-direction: column;
+  }
+  .section9 .inner > div.text {
+    max-width: none;
+  }
+  .section9 .inner > div.text h2 {
+    font-size: 1.5rem;
+  }
+  .section9 .inner > div.text p {
+    max-width: none;
+  }
+  .section9 .inner > div.text .links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5.5rem;
+  }
+  .section9 .inner > div.text .links a {
+    width: 100%;
+    border-radius: 6vw;
+  }
+  .section9 .inner > div.cards {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .section9 .inner > div.cards .card {
+    width: 100%;
+    max-width: none;
+    padding: 2rem 1.5rem;
+  }
+  .section9 .inner > div.cards .card img {
+    margin-bottom: 2rem;
+  }
+  .section9 .inner > div.cards .card p {
+    margin-bottom: 1.5rem;
   }
 }

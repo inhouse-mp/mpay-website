@@ -51,15 +51,7 @@
             <!-- Products -->
     
             <!-- Learn -->
-            <div class="dropdown">
-                <button class="btn  dropdown-toggle" type="button" id="dropdownServices" data-bs-toggle="dropdown" aria-expanded="false">
-                    Learn
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownServices">
-                    <!-- <li><button class="dropdown-item" type="button">Checkout</button></li> -->
-    
-                </ul>
-            </div>
+            
             <!-- Learn -->
     
             <!-- Developers -->
@@ -68,33 +60,62 @@
                     Developers
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownServices">
-                    <%- include('./nav-components/api-documentation.ejs' )%>
-                    <%- include('./nav-components/api-status.ejs' )%>
-                    <%- include('./nav-components/sandbox.ejs' )%>
+                    <%- include('./nav-components/api-documentation.ejs')%>
+                    <%- include('./nav-components/api-status.ejs')%>
+                    <%- include('./nav-components/sandbox.ejs')%>
                 </ul>
             </div>
             <!-- Developers -->
+
+
+            <!-- Learn -->
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle" type="button" id="dropdownServices" data-bs-toggle="dropdown" aria-expanded="false">
+                    Learn
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownServices">
+                    <%- include('./nav-components/blog.ejs')%>
+                    <%- include('./nav-components/how-to-videos.ejs')%>
+                </ul>
+            </div>
+            <!-- Learn -->
+
+
+            <!-- Demo -->
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle" type="button" id="dropdownServices" data-bs-toggle="dropdown" aria-expanded="false">
+                    Demo
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownServices">
+                    <%- include('./nav-components/checkout-demo.ejs')%>
+                    <%- include('./nav-components/card-demo.ejs')%>
+                    <%- include('./nav-components/payment-link-demo.ejs')%>
+                    <%- include('./nav-components/instore-checkout-demo.ejs')%>
+                    <%- include('./nav-components/mobile-pos-demo.ejs')%>
+                </ul>
+            </div>
+            <!-- Demo -->
     
             <!-- Pricing -->
             <div class="dropdown">
                 <button class="btn  dropdown-toggle" type="button" id="dropdownServices" data-bs-toggle="dropdown" aria-expanded="false">
                     Pricing
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownServices">
+                 <ul class="dropdown-menu" aria-labelledby="dropdownServices"> 
                     <%- include('./nav-components/ng.ejs' )%>
                     <%- include('./nav-components/ks.ejs' )%>
-                </ul>
+                    <%- include('./nav-components/gh.ejs' )%>
+                 </ul> 
             </div>
-            <!-- Pricing -->
         </div>
     
         <div class="buttons">
-            <a href="" class="cta">Create Account</a>
-            <select class="country" id="country">
-                <!-- <option value="">O</option>
+            <a href="" class="cta">Sign In</a>
+            <!-- <select class="country" id="country">
                 <option value="">O</option>
-                <option value="">O</option> -->
-            </select>
+                <option value="">O</option>
+                <option value="">O</option>
+            </select> -->
     
             <!-- MOBILE DROPDOWN -->
     
@@ -230,8 +251,13 @@
     
                     <!-- Countries  -->
                     <li class="title">Countries</li>
-                    <%- include('./nav-components/ng.ejs' )%>
-                    <%- include('./nav-components/ks.ejs' )%>
+                    <%- include('./nav-components/ng.ejs')%>
+                    <%- include('./nav-components/ks.ejs')%>
+
+                    <li class="item" style="display:flex ;">
+                        <a href="" style="padding: 10px; flex:1">Sign in</a>
+                        <a href="" style="padding: 10px; flex:1">Create Account</a>
+                    </li>
     
     
                     <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->

@@ -1,0 +1,108 @@
+/*
+.links {
+    .show-on-mobile('none');
+    border: 1px solid red;
+    padding: 10px;
+  }
+*/
+@import "../../assets/GTWalsheimPro/stylesheet.css";
+.blue-black {
+  color: #1e1e1e;
+}
+.blue-black .blue {
+  color: #192cd1;
+}
+.davy-gray {
+  color: #525252;
+}
+.bred {
+  border: 1px solid red;
+}
+.faqs-cont {
+  background-color: #121212;
+  padding: 9.5rem 6.08vw;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .faqs-cont {
+    padding: 5.5rem 6.08vw;
+  }
+}
+.faqs {
+  display: flex;
+  max-width: 1304px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.faqs > div {
+  flex: 1;
+}
+.faqs > div h1 {
+  font-size: 2.5rem;
+  max-width: 390px;
+  color: white;
+  font-weight: bold;
+}
+.faqs .accordion {
+  background-color: transparent;
+  --bs-accordion-bg: transparent;
+  max-width: 39rem;
+  --bs-accordion-border-color: #e7e7e7;
+}
+.faqs .accordion .accordion-header {
+  background-color: transparent;
+}
+.faqs .accordion .accordion-button {
+  color: white;
+  padding: 2rem 0rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.faqs .accordion .accordion-button::after {
+  background-image: url("../../assets/svgs/chevron-down.svg");
+}
+.faqs .accordion .accordion-button.show {
+  box-shadow: none;
+}
+.faqs .accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.faqs .accordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+.faqs .accordion .accordion-button:not(.collapsed)::after {
+  background-image: url("../../assets/svgs/chevron-down.svg");
+}
+.faqs .accordion .accordion-body {
+  padding: 20px 0px;
+  line-height: 150%;
+  color: white;
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .faqs > div h1 {
+    font-size: 2rem;
+  }
+  .faqs .accordion .accordion-button {
+    font-size: 1rem;
+  }
+  .faqs .accordion .accordion-body {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
+  .faqs {
+    flex-direction: column;
+    gap: 6.25rem;
+  }
+  .faqs > div h1 {
+    font-size: 1.875rem;
+    text-align: center;
+  }
+  .faqs .accordion .accordion-button {
+    font-size: 1.125rem;
+  }
+  .faqs .accordion .accordion-body {
+    font-size: 0.9rem;
+  }
+}

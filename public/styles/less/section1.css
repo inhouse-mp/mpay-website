@@ -15,6 +15,9 @@
 .davy-gray {
   color: #525252;
 }
+.bred {
+  border: 1px solid red;
+}
 .section1 .text {
   max-width: 537px;
   margin: auto;
@@ -56,53 +59,106 @@
   font-weight: bold;
   font-size: 1.5rem;
 }
-@media screen and (min-width: 1081px)  {
+@media screen and (min-width: 1195px)  {
   .section1 {
     max-width: 1304px;
     margin: auto;
     padding: 10.91vh 0vw;
   }
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   .section1 {
     padding: 10.91vh 6.51vw;
   }
+  .section1 .text h1 {
+    font-size: 1.9rem;
+  }
   .section1 .blocks {
     gap: 1vw;
+  }
+  .section1 .blocks div h2 {
+    font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   .section1 {
     padding: 10.91vh 5.96vw;
   }
+  .section1 .text h1 {
+    transform: scale(0.8);
+  }
+  .section1 .text p {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .section1 .blocks {
     gap: 4.5vw;
-    margin-top: 8.2vh;
+    margin-top: 6rem;
+  }
+  .section1 .blocks div h2 {
+    font-size: 1rem;
+  }
+  .section1 .blocks div p {
+    font-size: 0.9rem;
+  }
+  .section1 .blocks div .img-cont {
+    margin-bottom: 0px;
+  }
+  .section1 .blocks div img {
+    transform: scale(0.7);
   }
 }
 @media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   .section1 {
     padding: 10.91vh 6.51vw;
   }
+  .section1 .text h1 {
+    font-size: 1.5rem;
+  }
+  .section1 .text p {
+    font-size: 0.8rem;
+  }
   .section1 .blocks {
     gap: 5vw;
   }
-  .section1 .blocks div h2 {
-    font-size: 1.1rem;
+  .section1 .blocks div img {
+    transform: scale(0.8);
   }
-  .section1 .blocks div p {
+  .section1 .blocks div h2 {
     font-size: 0.9rem;
   }
+  .section1 .blocks div p {
+    font-size: 0.8rem;
+  }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .section1 {
     background-color: #F6F6FF;
-    padding: 7.73vh 6.54vw;
+    padding: 4.5rem 6.54vw;
+  }
+  .section1 .text h1 {
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
   }
   .section1 .blocks {
-    margin-top: 12.2vh;
+    margin-top: 7rem;
     flex-direction: column;
     align-items: center;
-    gap: 6.87vh;
+    gap: 4rem;
+  }
+  .section1 .blocks div h2 {
+    font-size: 1.25rem;
+  }
+  .section1 .blocks div p {
+    font-size: 0.9375rem;
+  }
+  .section1 .blocks div .img-cont {
+    min-height: 100px;
+    max-height: 200px;
+    margin-bottom: 2rem;
+  }
+  .section1 .blocks div img {
+    transform: scale(0.85);
   }
 }

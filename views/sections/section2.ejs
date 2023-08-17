@@ -5,13 +5,14 @@
     </div>
     <div class="text">
         <div class="inner">
+            <!-- COLLECTION SECTION -->
             <h2>Convenient payment collections at your fingertips.</h2>
             <p>Collect payments from individuals or businesses locally and globally, and settle them in multiple currencies, ensuring a cost-effective and hassle-free payment process.</p>
             <ul>
                 <li>
                     <span class="circle"></span>
                     <span>
-                        Bulk Transfers
+                        Bank Transfers
                     </span>
                 </li>
                 <li>

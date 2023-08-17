@@ -59,20 +59,18 @@
   gap: 2.15vh;
 }
 .section7 .inner #carousel .carousel-inner .carousel-item div img {
-  width: 4.17vw;
   aspect-ratio: 1;
   border-radius: 8px;
-  background: white;
 }
 .section7 .inner #carousel .carousel-inner .carousel-item div p {
   color: #1e1e1e;
   text-align: center;
 }
 .section7 .inner #carousel .carousel-inner .carousel-item.active div {
-  background: #192cd1;
+  background: #DCE5F0;
 }
 .section7 .inner #carousel .carousel-inner .carousel-item.active div p {
-  color: white;
+  color: #1e1e1e;
 }
 .section7 .inner #carousel .controller-cont {
   display: flex;
@@ -89,9 +87,9 @@
 }
 .section7 .inner #carousel .controller-cont button.rght img {
   display: block;
-  transform: rotate(90);
+  transform: rotate(90deg);
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   .section7 {
     padding: 0vh 6.05vw;
   }
@@ -132,7 +130,7 @@
     width: 15vw;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .section7 .inner {
     flex-direction: column;
   }

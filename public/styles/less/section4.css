@@ -15,6 +15,9 @@
 .davy-gray {
   color: #525252;
 }
+.bred {
+  border: 1px solid red;
+}
 .section4-cont {
   border-bottom: 1px solid #e3e3e3;
 }
@@ -23,6 +26,13 @@
   margin: auto;
   margin-top: 8.24vh;
   padding-bottom: 8.24vh;
+}
+.section4 h1 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+.section4 p {
+  margin-bottom: 0px;
 }
 .section4 #carousel {
   display: flex !important;
@@ -35,6 +45,7 @@
   width: auto;
   height: auto;
   opacity: 1;
+  background-color: transparent;
 }
 .section4 #carousel .carousel-indicators {
   position: relative !important;
@@ -106,26 +117,33 @@
   font-size: 2.2rem;
   font-weight: 500 !important;
 }
-@media screen and (min-width: 1081px)  {
+@media screen and (min-width: 1195px)  {
   .section4 #carousel .carousel-indicators button {
-    margin-bottom: 2.95vh;
+    margin-bottom: 2rem;
   }
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   .section4 {
     padding: 0px 6.51vw;
     padding-bottom: 8.24vh;
+  }
+  .section4 #carousel .carousel-indicators .header-text h1 {
+    font-size: 1.5rem;
+  }
+  .section4 #carousel .carousel-indicators button h4 {
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   .section4 {
     padding: 0px 5.96vw;
   }
-  .section4 #carousel {
-    gap: 3.89vw;
+  .section4 #carousel .carousel-indicators {
+    max-width: 532px;
   }
   .section4 #carousel .carousel-indicators p {
     margin-bottom: 0px !important;
+    font-size: 0.8rem;
   }
   .section4 #carousel .carousel-indicators .header-text h1 {
     font-size: 1.4rem;
@@ -134,7 +152,10 @@
     margin-bottom: 0px;
   }
   .section4 #carousel .carousel-indicators button h4 {
-    font-size: 1.15rem;
+    font-size: 0.9rem;
+  }
+  .section4 #carousel .carousel-indicators button p {
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
@@ -145,22 +166,30 @@
     margin-bottom: 0px;
   }
   .section4 #carousel .carousel-indicators .header-text h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .section4 #carousel .carousel-indicators button {
     margin-bottom: 0px;
   }
   .section4 #carousel .carousel-indicators button h4 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .section4 #carousel .carousel-indicators button p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .section4 {
     padding-bottom: 170px;
+  }
+  .section4 h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .section4 p {
+    margin-bottom: 2rem;
+    text-align: center;
   }
   .section4 #carousel {
     flex-direction: column-reverse;
@@ -179,7 +208,7 @@
     margin-top: -160px;
   }
   .section4 #carousel .carousel-indicators button {
-    background-color: #e3e3e3;
+    border: 1px solid #525252;
   }
   .section4 #carousel .carousel-indicators button.active {
     background-color: #525252;

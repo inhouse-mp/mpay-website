@@ -22,17 +22,19 @@
   position: fixed;
   top: 0px;
   background-color: #FBFBFB !important;
-  border-bottom: 1px solid #e3e3e3;
   z-index: 999;
   width: 100vw;
 }
 nav {
-  height: 8.15vh;
+  height: 4.94rem;
   box-sizing: border-box;
   padding: 0vh 6.51vw 0vh 6.51vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+nav .logo a img {
+  width: 9.94rem;
 }
 nav .links {
   display: flex;
@@ -57,6 +59,7 @@ nav .buttons .hamburger {
   width: 8.84vw;
   display: grid;
   row-gap: 0.54vh;
+  transform: scale(0.8);
 }
 nav .buttons .hamburger #open {
   display: block;
@@ -77,7 +80,10 @@ nav .buttons .cta {
 }
 nav .dropdown .btn {
   padding: 0px !important;
+}
+nav .dropdown .btn.show {
   border: none;
+  border-color: transparent;
 }
 nav .dropdown .btn :focus {
   outline: none;
@@ -92,16 +98,19 @@ nav .dropdown .dropdown-menu {
 }
 nav .dropdown .dropdown-menu .title {
   color: #1e1e1e;
-  margin-bottom: 5.1vh;
+  margin-bottom: 2.13rem;
 }
 nav .dropdown .dropdown-menu .item {
   display: flex;
   align-items: center;
-  gap: 0.69vw;
-  margin-bottom: 4.36vh;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
 }
 nav .dropdown .dropdown-menu .item:last-child {
   margin-bottom: 0px;
+}
+nav .dropdown .dropdown-menu .item .icon svg {
+  width: 3rem;
 }
 nav .dropdown .dropdown-menu .item .text {
   display: inherit;
@@ -121,23 +130,23 @@ nav .dropdown .dropdown-menu .services-grid {
   gap: 3.47vw;
 }
 nav .dropdown.mobile .dropdown-menu {
-  box-sizing: border-box;
-  height: 92.2vh;
-  overflow-y: scroll;
   border: none;
+  box-sizing: border-box;
+  height: 100vh ;
+  overflow-y: scroll;
   width: 100vw;
   margin-top: 0.8vh !important;
   border-radius: 0px;
   padding: 4.72vh 5.7vw;
 }
 nav .dropdown.mobile .dropdown-menu .title {
-  margin-bottom: 3.86vh;
+  margin-bottom: 2.125rem;
 }
 nav .dropdown.mobile .dropdown-menu .item {
-  gap: 2.79vw;
-  margin-bottom: 5.36vh;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
 }
-@media screen and (min-width: 1081px)  {
+@media screen and (min-width: 1195px)  {
   nav {
     height: 8.77vh;
     padding: 0vh ;
@@ -149,7 +158,7 @@ nav .dropdown.mobile .dropdown-menu .item {
     width: 9.26vw;
   }
   nav .links {
-    gap: 1.35vw;
+    gap: 2rem;
   }
   nav .buttons {
     gap: 0.75vw;
@@ -161,10 +170,11 @@ nav .dropdown.mobile .dropdown-menu .item {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    height: 4.48vh;
+    height: 3.125rem;
     box-sizing: border-box;
-    padding: 1.34vw 1.54vw;
+    padding: 1.3rem 1.7rem;
     border-radius: 1.85vw;
+    font-size: 0.94rem;
   }
   nav .buttons .country {
     display: inline-block;
@@ -175,9 +185,12 @@ nav .dropdown.mobile .dropdown-menu .item {
     display: none;
   }
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  nav {
+    max-width: 1126px;
+  }
   nav .links {
-    gap: 1.5vw;
+    gap: 1rem;
   }
   nav .links .dropdown .btn {
     font-size: 0.9rem !important;
@@ -203,11 +216,14 @@ nav .dropdown.mobile .dropdown-menu .item {
     width: 15.59vw;
   }
   nav .links {
-    gap: 1.13vw;
+    gap: 0.9rem;
     justify-content: space-between;
   }
   nav .links .dropdown button {
     font-size: 0.8rem;
+  }
+  nav .links .dropdown button::after {
+    display: none;
   }
   nav .links .dropdown .dropdown-menu {
     margin-top: -45px !important;
@@ -227,17 +243,17 @@ nav .dropdown.mobile .dropdown-menu .item {
 }
 @media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   nav {
-    height: 11.5vh;
+    height: 4.125rem;
     padding: 0vh 6vw 0vh 6vw;
   }
-  nav .logo img {
-    width: 10.26vw;
+  nav .logo a img {
+    width: 70% !important;
   }
   nav .links {
     gap: 1.35vw;
   }
   nav .links .dropdown button {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   nav .links .dropdown .dropdown-menu {
     margin-top: -35px !important;
@@ -254,9 +270,9 @@ nav .dropdown.mobile .dropdown-menu .item {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    height: 4.48vh;
+    height: 2.5rem;
     box-sizing: border-box;
-    padding: 1.34vw 1.54vw;
+    padding: 1.34vw 2.54vw;
     border-radius: 40px;
     font-size: 0.8rem;
   }
@@ -269,7 +285,7 @@ nav .dropdown.mobile .dropdown-menu .item {
     display: none;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   nav .logo img {
     width: 38.37vw;
   }
@@ -282,13 +298,14 @@ nav .dropdown.mobile .dropdown-menu .item {
   }
 }
 .hero {
-  margin-top: 8.16vh;
+  margin-top: 6.125rem;
   grid-gap: 10px;
   padding: 2.58vh 6.51vw;
   border-bottom: 1px solid #e3e3e3;
 }
 .hero div.hero-image {
   margin-bottom: 3.65vh;
+  filter: grayscale();
 }
 .hero div.text h1 {
   font-weight: bold;
@@ -339,7 +356,7 @@ nav .dropdown.mobile .dropdown-menu .item {
   height: 60px;
   background-color: #f2f2f2;
 }
-@media screen and (min-width: 1081px)  {
+@media screen and (min-width: 1195px)  {
   .hero {
     margin-top: 8.24vh;
     padding: 6.72vh 5.96vw;
@@ -360,7 +377,7 @@ nav .dropdown.mobile .dropdown-menu .item {
   }
   .hero div.flex-container .hero-image img {
     width: 33.56vw;
-    max-width: 580px;
+    width: 36.25rem;
   }
   .hero div.flex-container .text {
     flex: 1;
@@ -369,22 +386,22 @@ nav .dropdown.mobile .dropdown-menu .item {
     justify-content: center;
   }
   .hero div.flex-container .text h1 {
-    font-size: 3.38rem !important;
+    font-size: 4rem !important;
   }
   .hero div.flex-container .text p {
-    max-width: 460px;
-    font-size: 1rem;
+    max-width: 527px;
+    font-size: 1.25rem;
   }
   .hero div.flex-container .text .buttons {
     flex-direction: row;
   }
   .hero div.flex-container .text .buttons a {
-    height: 52px;
+    height: 3.25rem;
+    font-size: 0.875rem;
     width: auto;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    gap: 1vw;
-    border-radius: 4vw;
+    padding: 1.3rem 1.5rem;
+    gap: 1.25rem;
+    border-radius: 1.85vw;
   }
   .hero div.logos {
     max-width: 1304px;
@@ -403,7 +420,7 @@ nav .dropdown.mobile .dropdown-menu .item {
     height: 45px;
   }
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   .hero div.flex-container {
     display: flex;
     flex-direction: row-reverse;
@@ -479,6 +496,7 @@ nav .dropdown.mobile .dropdown-menu .item {
   }
   .hero div.flex-container .text .buttons {
     flex-direction: row;
+    gap: 1.25rem;
   }
   .hero div.flex-container .text .buttons a {
     height: 3.81vh;
@@ -487,7 +505,7 @@ nav .dropdown.mobile .dropdown-menu .item {
     padding-right: 2vw;
     gap: 1vw;
     border-radius: 4vw;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
   .hero div.logos {
     margin-top: 15.47vh;
@@ -515,6 +533,12 @@ nav .dropdown.mobile .dropdown-menu .item {
     flex-direction: row-reverse;
     gap: 6.3vw;
   }
+  .hero div.flex-container .hero-image {
+    text-align: center !important;
+  }
+  .hero div.flex-container .hero-image img {
+    width: 80%;
+  }
   .hero div.flex-container .text {
     flex: 1;
     display: flex;
@@ -522,17 +546,21 @@ nav .dropdown.mobile .dropdown-menu .item {
     justify-content: center;
   }
   .hero div.flex-container .text h1 {
-    font-size: 2.7rem !important;
+    font-size: 1.5rem !important;
+  }
+  .hero div.flex-container .text p {
+    font-size: 0.8rem;
   }
   .hero div.flex-container .text .buttons {
     flex-direction: row;
   }
   .hero div.flex-container .text .buttons a {
-    height: 52px;
+    height: 2.5rem;
     width: auto;
     padding-left: 2vw;
     padding-right: 2vw;
     gap: 1vw;
+    font-size: 0.5rem !important;
     border-radius: 4vw;
     font-size: 0.8rem;
   }
@@ -549,9 +577,22 @@ nav .dropdown.mobile .dropdown-menu .item {
     height: 45px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .hero {
     border-bottom: none;
+  }
+  .hero div.flex-container .hero-image img {
+    max-width: 86.98vw;
+  }
+  .hero div.flex-container .text h1 {
+    line-height: 140%;
+    font-size: 1.55rem !important;
+  }
+  .hero div.flex-container .text .buttons a {
+    font-size: 0.875rem;
+  }
+  .hero div .logos p {
+    font-size: 0.9375rem;
   }
 }
 .section1 .text {
@@ -595,54 +636,107 @@ nav .dropdown.mobile .dropdown-menu .item {
   font-weight: bold;
   font-size: 1.5rem;
 }
-@media screen and (min-width: 1081px)  {
+@media screen and (min-width: 1195px)  {
   .section1 {
     max-width: 1304px;
     margin: auto;
     padding: 10.91vh 0vw;
   }
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   .section1 {
     padding: 10.91vh 6.51vw;
   }
+  .section1 .text h1 {
+    font-size: 1.9rem;
+  }
   .section1 .blocks {
     gap: 1vw;
+  }
+  .section1 .blocks div h2 {
+    font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   .section1 {
     padding: 10.91vh 5.96vw;
   }
+  .section1 .text h1 {
+    transform: scale(0.8);
+  }
+  .section1 .text p {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .section1 .blocks {
     gap: 4.5vw;
-    margin-top: 8.2vh;
+    margin-top: 6rem;
+  }
+  .section1 .blocks div h2 {
+    font-size: 1rem;
+  }
+  .section1 .blocks div p {
+    font-size: 0.9rem;
+  }
+  .section1 .blocks div .img-cont {
+    margin-bottom: 0px;
+  }
+  .section1 .blocks div img {
+    transform: scale(0.7);
   }
 }
 @media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   .section1 {
     padding: 10.91vh 6.51vw;
   }
+  .section1 .text h1 {
+    font-size: 1.5rem;
+  }
+  .section1 .text p {
+    font-size: 0.8rem;
+  }
   .section1 .blocks {
     gap: 5vw;
   }
-  .section1 .blocks div h2 {
-    font-size: 1.1rem;
+  .section1 .blocks div img {
+    transform: scale(0.8);
   }
-  .section1 .blocks div p {
+  .section1 .blocks div h2 {
     font-size: 0.9rem;
   }
+  .section1 .blocks div p {
+    font-size: 0.8rem;
+  }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .section1 {
     background-color: #F6F6FF;
-    padding: 7.73vh 6.54vw;
+    padding: 4.5rem 6.54vw;
+  }
+  .section1 .text h1 {
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
   }
   .section1 .blocks {
-    margin-top: 12.2vh;
+    margin-top: 7rem;
     flex-direction: column;
     align-items: center;
-    gap: 6.87vh;
+    gap: 4rem;
+  }
+  .section1 .blocks div h2 {
+    font-size: 1.25rem;
+  }
+  .section1 .blocks div p {
+    font-size: 0.9375rem;
+  }
+  .section1 .blocks div .img-cont {
+    min-height: 100px;
+    max-height: 200px;
+    margin-bottom: 2rem;
+  }
+  .section1 .blocks div img {
+    transform: scale(0.85);
   }
 }
 .section2 {
@@ -714,13 +808,19 @@ nav .dropdown.mobile .dropdown-menu .item {
   color: #E8EBFF;
   font-weight: bold;
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   .section2 .img-cont img {
     width: 40vw;
   }
   .section2 .text {
     height: auto;
     padding: 13.5vh 3.5vw;
+  }
+  .section2 .text .inner h2 {
+    font-size: 1.8rem;
+  }
+  .section2 .text h2 {
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
@@ -734,8 +834,14 @@ nav .dropdown.mobile .dropdown-menu .item {
   .section2 .text .inner {
     transform: scale(0.9);
   }
-  .section2 .text h2 {
-    font-size: 2rem;
+  .section2 .text .inner h2 {
+    font-size: 1.4rem;
+  }
+  .section2 .text .inner ul {
+    row-gap: 0.8rem;
+  }
+  .section2 .text .inner ul li span {
+    font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
@@ -752,8 +858,18 @@ nav .dropdown.mobile .dropdown-menu .item {
   .section2 .text .inner {
     transform: scale(0.8);
   }
+  .section2 .text .inner h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  .section2 .text .inner p {
+    margin-bottom: 0.8rem;
+  }
+  .section2 .text .inner ul {
+    margin-bottom: 1rem;
+  }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .section2 {
     flex-direction: column;
     margin-top: 13.52vh;
@@ -766,7 +882,7 @@ nav .dropdown.mobile .dropdown-menu .item {
   }
 }
 .section3 {
-  margin: 7.43vh auto auto auto;
+  margin: 5.125rem auto auto auto;
   border-bottom: 1px solid #e3e3e3;
   padding-bottom: 7.34vh;
 }
@@ -778,9 +894,9 @@ nav .dropdown.mobile .dropdown-menu .item {
 .section3 .inner > .text {
   display: flex;
   flex-direction: column;
-  max-width: 527px;
+  max-width: 32.9375rem;
   margin: auto;
-  margin-bottom: 6.54vh;
+  margin-bottom: 4.5rem;
 }
 .section3 .inner > .text .top-text {
   background: linear-gradient(225deg, #4043FF 0%, #192CD1 100%);
@@ -794,6 +910,7 @@ nav .dropdown.mobile .dropdown-menu .item {
 }
 .section3 .inner > .text h1 {
   font-size: 1.88rem;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 1.07vh;
 }
@@ -805,23 +922,25 @@ nav .dropdown.mobile .dropdown-menu .item {
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
-  gap: 4.86vw;
+  gap: 5.25rem;
 }
 .section3 .inner .products .product {
-  min-width: 312px;
-  max-width: 18.6vw;
+  min-width: 19.5rem;
+  max-width: 19.5rem;
 }
 .section3 .inner .products .product .img-cont {
   background-color: #EAECFF;
-  padding: 3.58vh 2.78vw;
-  min-height: 20vh;
+  min-height: 12.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 24px 24px 0px 0px;
+  border-radius: 1.5rem 1.5rem 0px 0px;
 }
 .section3 .inner .products .product .img-cont img {
-  width: 90px;
+  width: 5.26rem;
+}
+.section3 .inner .products .product .mpay-cards img {
+  width: 50% !important;
 }
 .section3 .inner .products .product .text {
   background-color: #F4F4F4;
@@ -829,7 +948,7 @@ nav .dropdown.mobile .dropdown-menu .item {
   padding: 2.51vh 1.85vw;
 }
 .section3 .inner .products .product .text h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 1.07vh;
 }
@@ -842,46 +961,81 @@ nav .dropdown.mobile .dropdown-menu .item {
   font-weight: bold;
   color: #192cd1;
 }
-@media screen and (min-width: 1081px)  {
+@media screen and (min-width: 1195px)  {
   .section3 {
     padding-bottom: 7.34vh;
   }
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section3 {
+    padding-bottom: 5rem;
+  }
   .section3 .inner .text .top-text {
     padding: 1.3vh 1.7vw;
   }
   .section3 .inner .products {
     padding: 0vh 6.51vw;
+    gap: 3vw;
   }
   .section3 .inner .products .product {
-    min-width: 25.3vw;
+    min-width: 16rem;
+    max-width: 16rem;
   }
   .section3 .inner .products .product .img-cont {
     min-height: 20vh;
   }
+  .section3 .inner .products .product .img-cont img {
+    width: 4rem;
+  }
   .section3 .inner .products .product .text h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .section3 {
+    padding-bottom: 3rem;
+  }
+  .section3 .inner .text {
+    margin-bottom: 2rem;
+  }
   .section3 .inner .text .top-text {
     padding: 1.3vh 2.7vw;
     border-radius: 25px;
   }
+  .section3 .inner .text h1 {
+    transform: scale(0.9);
+  }
   .section3 .inner .products {
-    gap: 1vw;
+    gap: 0.5vw;
+    padding: 0vh 6.51vw;
   }
   .section3 .inner .products .product {
-    min-width: 29.3vw;
-    transform: scale(0.95);
+    transform: scale(0.9);
+    max-width: 13.5rem;
+    min-width: 13.5rem;
   }
   .section3 .inner .products .product .img-cont {
-    min-height: 15vh;
-    max-height: 15vh;
+    min-height: 12vh;
+    max-height: 12vh;
+  }
+  .section3 .inner .products .product .img-cont img {
+    width: 4rem;
+  }
+  .section3 .inner .products .product .mpay-cards img {
+    width: 100% !important;
+  }
+  .section3 .inner .products .product .text {
+    padding: 2vh 1.8vw;
   }
   .section3 .inner .products .product .text h3 {
     font-size: 1.1rem;
+  }
+  .section3 .inner .products .product .text p {
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+  }
+  .section3 .inner .products .product .text a {
+    font-size: 0.85rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
@@ -892,24 +1046,33 @@ nav .dropdown.mobile .dropdown-menu .item {
     font-size: 0.9rem;
     padding: 1.3vh 1.7vw;
   }
+  .section3 .inner > .text h1 {
+    font-size: 1.7rem;
+  }
   .section3 .inner .products {
     gap: 5vw;
   }
   .section3 .inner .products .product {
+    max-width: 25vw;
     min-width: 25vw;
+    width: 25vw;
   }
   .section3 .inner .products .product .img-cont {
-    height: 30vh;
+    max-height: 8.5rem;
+    min-height: 8.5rem;
+  }
+  .section3 .inner .products .product .img-cont img {
+    width: 4rem;
   }
   .section3 .inner .products .product .text h3 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .section3 .inner .products .product .text p,
   .section3 .inner .products .product .text a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .section3 {
     padding: 0vh 6.51vw;
     border-bottom: 1px solid transparent;
@@ -952,6 +1115,13 @@ nav .dropdown.mobile .dropdown-menu .item {
   margin-top: 8.24vh;
   padding-bottom: 8.24vh;
 }
+.section4 h1 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+.section4 p {
+  margin-bottom: 0px;
+}
 .section4 #carousel {
   display: flex !important;
   gap: 8.8vw;
@@ -963,6 +1133,7 @@ nav .dropdown.mobile .dropdown-menu .item {
   width: auto;
   height: auto;
   opacity: 1;
+  background-color: transparent;
 }
 .section4 #carousel .carousel-indicators {
   position: relative !important;
@@ -1034,26 +1205,33 @@ nav .dropdown.mobile .dropdown-menu .item {
   font-size: 2.2rem;
   font-weight: 500 !important;
 }
-@media screen and (min-width: 1081px)  {
+@media screen and (min-width: 1195px)  {
   .section4 #carousel .carousel-indicators button {
-    margin-bottom: 2.95vh;
+    margin-bottom: 2rem;
   }
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   .section4 {
     padding: 0px 6.51vw;
     padding-bottom: 8.24vh;
+  }
+  .section4 #carousel .carousel-indicators .header-text h1 {
+    font-size: 1.5rem;
+  }
+  .section4 #carousel .carousel-indicators button h4 {
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
   .section4 {
     padding: 0px 5.96vw;
   }
-  .section4 #carousel {
-    gap: 3.89vw;
+  .section4 #carousel .carousel-indicators {
+    max-width: 532px;
   }
   .section4 #carousel .carousel-indicators p {
     margin-bottom: 0px !important;
+    font-size: 0.8rem;
   }
   .section4 #carousel .carousel-indicators .header-text h1 {
     font-size: 1.4rem;
@@ -1062,7 +1240,10 @@ nav .dropdown.mobile .dropdown-menu .item {
     margin-bottom: 0px;
   }
   .section4 #carousel .carousel-indicators button h4 {
-    font-size: 1.15rem;
+    font-size: 0.9rem;
+  }
+  .section4 #carousel .carousel-indicators button p {
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
@@ -1073,22 +1254,30 @@ nav .dropdown.mobile .dropdown-menu .item {
     margin-bottom: 0px;
   }
   .section4 #carousel .carousel-indicators .header-text h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .section4 #carousel .carousel-indicators button {
     margin-bottom: 0px;
   }
   .section4 #carousel .carousel-indicators button h4 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .section4 #carousel .carousel-indicators button p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .section4 {
     padding-bottom: 170px;
+  }
+  .section4 h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .section4 p {
+    margin-bottom: 2rem;
+    text-align: center;
   }
   .section4 #carousel {
     flex-direction: column-reverse;
@@ -1107,7 +1296,7 @@ nav .dropdown.mobile .dropdown-menu .item {
     margin-top: -160px;
   }
   .section4 #carousel .carousel-indicators button {
-    background-color: #e3e3e3;
+    border: 1px solid #525252;
   }
   .section4 #carousel .carousel-indicators button.active {
     background-color: #525252;
@@ -1196,7 +1385,7 @@ nav .dropdown.mobile .dropdown-menu .item {
     font-size: 0.9rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .section5 {
     flex-direction: column-reverse;
     gap: 5.15vh;
@@ -1305,7 +1494,7 @@ nav .dropdown.mobile .dropdown-menu .item {
   background: #192cd1;
   color: white;
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   .section6 .inner > div.one div {
     width: 21vw;
     padding: 2.49vh 1.5vw;
@@ -1359,8 +1548,11 @@ nav .dropdown.mobile .dropdown-menu .item {
   .section6 .inner > div {
     width: auto;
   }
+  .section6 .inner > div.one .first {
+    width: 50%;
+  }
   .section6 .inner > div.one div {
-    max-height: 140px;
+    max-height: 150px;
     width: auto;
   }
   .section6 .inner > div.one div h1 {
@@ -1370,10 +1562,10 @@ nav .dropdown.mobile .dropdown-menu .item {
     font-size: 0.8rem;
   }
   .section6 .inner > div.one div.second {
-    margin-left: -30px;
+    margin-left: -40px;
   }
   .section6 .inner > div.two h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 80%;
   }
   .section6 .inner > div.two p {
@@ -1389,20 +1581,20 @@ nav .dropdown.mobile .dropdown-menu .item {
     padding: 2vh 0vw;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .section6 .inner {
     flex-direction: column;
     height: auto;
   }
   .section6 .inner > div.one {
     border-radius: 24px 24px 0px 0px;
-    padding: 8.27vh 6vw;
+    padding: 8.27vh 0vw;
     display: block;
   }
   .section6 .inner > div.one div {
     transform: scale(0.8);
-    width: 75vw;
-    max-width: 210px;
+    width: 70vw;
+    max-width: 200px;
   }
   .section6 .inner > div.one div p {
     font-size: 0.8rem;
@@ -1412,9 +1604,10 @@ nav .dropdown.mobile .dropdown-menu .item {
     margin-right: 10px;
   }
   .section6 .inner > div.one div.second {
-    margin-top: -100px;
+    margin-top: -85px;
     margin-right: -10px;
     float: right;
+    transform: scale(0.6) !important;
   }
   .section6 .inner > div.two {
     padding: 6.3vh 9.7vw;
@@ -1483,20 +1676,18 @@ nav .dropdown.mobile .dropdown-menu .item {
   gap: 2.15vh;
 }
 .section7 .inner #carousel .carousel-inner .carousel-item div img {
-  width: 4.17vw;
   aspect-ratio: 1;
   border-radius: 8px;
-  background: white;
 }
 .section7 .inner #carousel .carousel-inner .carousel-item div p {
   color: #1e1e1e;
   text-align: center;
 }
 .section7 .inner #carousel .carousel-inner .carousel-item.active div {
-  background: #192cd1;
+  background: #DCE5F0;
 }
 .section7 .inner #carousel .carousel-inner .carousel-item.active div p {
-  color: white;
+  color: #1e1e1e;
 }
 .section7 .inner #carousel .controller-cont {
   display: flex;
@@ -1513,9 +1704,9 @@ nav .dropdown.mobile .dropdown-menu .item {
 }
 .section7 .inner #carousel .controller-cont button.rght img {
   display: block;
-  transform: rotate(90);
+  transform: rotate(90deg);
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   .section7 {
     padding: 0vh 6.05vw;
   }
@@ -1556,7 +1747,7 @@ nav .dropdown.mobile .dropdown-menu .item {
     width: 15vw;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .section7 .inner {
     flex-direction: column;
   }
@@ -1634,10 +1825,10 @@ nav .dropdown.mobile .dropdown-menu .item {
     transform: scale(0.8);
   }
   .section8 .inner > div p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .section8 .inner {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
@@ -1650,7 +1841,7 @@ nav .dropdown.mobile .dropdown-menu .item {
 }
 .section9 {
   background: linear-gradient(225deg, #4043FF 0%, #192CD1 100%);
-  padding: 12vh 6.08vw;
+  padding: 8.44rem 6.08vw;
 }
 .section9 .inner {
   max-width: 1304px;
@@ -1716,7 +1907,10 @@ nav .dropdown.mobile .dropdown-menu .item {
   color: #192cd1;
   font-weight: bold;
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section9 .inner {
+    flex-direction: column;
+  }
   .section9 .inner > div.text {
     max-width: 400px;
   }
@@ -1735,6 +1929,285 @@ nav .dropdown.mobile .dropdown-menu .item {
   }
   .section9 .inner > div.cards .card {
     padding: 0.5vh 1.39vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  .section9 .inner {
+    gap: 2vw;
+  }
+  .section9 .inner > div.text {
+    max-width: 38vw;
+  }
+  .section9 .inner > div.text h2 {
+    font-size: 1.1rem;
+  }
+  .section9 .inner > div.text p {
+    max-width: none;
+  }
+  .section9 .inner > div.text .links {
+    display: flex;
+    gap: 1vw;
+  }
+  .section9 .inner > div.text .links a {
+    border-radius: 4vw;
+    padding: 0.8vh 2vw;
+    width: auto;
+    height: auto;
+  }
+  .section9 .inner > div.cards .card {
+    padding: 1vh 1.39vw;
+  }
+  .section9 .inner > div.cards .card h4 {
+    font-size: 0.8rem;
+  }
+  .section9 .inner > div.cards .card p,
+  .section9 .inner > div.cards .card a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .section9 {
+    padding: 6.44rem 6.08vw;
+  }
+  .section9 .inner {
+    gap: 2vw;
+  }
+  .section9 .inner > div.text {
+    max-width: 38vw;
+  }
+  .section9 .inner > div.text h2 {
+    font-size: 1.32rem;
+  }
+  .section9 .inner > div.text p {
+    max-width: none;
+  }
+  .section9 .inner > div.text .links {
+    display: flex;
+    gap: 1vw;
+  }
+  .section9 .inner > div.text .links a {
+    border-radius: 4vw;
+    padding: 1.5vh 2vw;
+    width: auto;
+    height: auto;
+    font-size: 0.8rem;
+  }
+  .section9 .inner > div.cards .card {
+    padding: 1vh 1.39vw;
+  }
+  .section9 .inner > div.cards .card h4 {
+    font-size: 0.8rem;
+  }
+  .section9 .inner > div.cards .card p,
+  .section9 .inner > div.cards .card a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
+  .section9 {
+    padding: 4rem 6.08vw;
+  }
+  .section9 .inner {
+    flex-direction: column;
+  }
+  .section9 .inner > div.text {
+    max-width: none;
+  }
+  .section9 .inner > div.text h2 {
+    font-size: 1.5rem;
+  }
+  .section9 .inner > div.text p {
+    max-width: none;
+  }
+  .section9 .inner > div.text .links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5.5rem;
+  }
+  .section9 .inner > div.text .links a {
+    width: 100%;
+    border-radius: 6vw;
+  }
+  .section9 .inner > div.cards {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .section9 .inner > div.cards .card {
+    width: 100%;
+    max-width: none;
+    padding: 2rem 1.5rem;
+  }
+  .section9 .inner > div.cards .card img {
+    margin-bottom: 2rem;
+  }
+  .section9 .inner > div.cards .card p {
+    margin-bottom: 1.5rem;
+  }
+}
+.faqs-cont {
+  background-color: #121212;
+  padding: 9.5rem 6.08vw;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .faqs-cont {
+    padding: 5.5rem 6.08vw;
+  }
+}
+.faqs {
+  display: flex;
+  max-width: 1304px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.faqs > div {
+  flex: 1;
+}
+.faqs > div h1 {
+  font-size: 2.5rem;
+  max-width: 390px;
+  color: white;
+  font-weight: bold;
+}
+.faqs .accordion {
+  background-color: transparent;
+  --bs-accordion-bg: transparent;
+  max-width: 39rem;
+  --bs-accordion-border-color: #e7e7e7;
+}
+.faqs .accordion .accordion-header {
+  background-color: transparent;
+}
+.faqs .accordion .accordion-button {
+  color: white;
+  padding: 2rem 0rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.faqs .accordion .accordion-button::after {
+  background-image: url("../../assets/svgs/chevron-down.svg");
+}
+.faqs .accordion .accordion-button.show {
+  box-shadow: none;
+}
+.faqs .accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.faqs .accordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+.faqs .accordion .accordion-button:not(.collapsed)::after {
+  background-image: url("../../assets/svgs/chevron-down.svg");
+}
+.faqs .accordion .accordion-body {
+  padding: 20px 0px;
+  line-height: 150%;
+  color: white;
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  .faqs > div h1 {
+    font-size: 2rem;
+  }
+  .faqs .accordion .accordion-button {
+    font-size: 1rem;
+  }
+  .faqs .accordion .accordion-body {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
+  .faqs {
+    flex-direction: column;
+    gap: 6.25rem;
+  }
+  .faqs > div h1 {
+    font-size: 1.875rem;
+    text-align: center;
+  }
+  .faqs .accordion .accordion-button {
+    font-size: 1.125rem;
+  }
+  .faqs .accordion .accordion-body {
+    font-size: 0.9rem;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5.9rem 6.08vw;
+  gap: 8.25rem;
+}
+footer section {
+  width: 100%;
+  max-width: 1304px;
+}
+footer section.main {
+  display: flex;
+  gap: 16.25rem;
+}
+footer section.main .logo img {
+  width: 10.93rem;
+  margin-bottom: 2.625rem;
+}
+footer section.main .logo p {
+  max-width: 14rem;
+}
+footer section.main .links {
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 4.5rem;
+}
+footer section.main .links h4 {
+  color: #192cd1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.125rem;
+}
+footer section.main .links .cont {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+footer section.main .links .cont a {
+  color: #525252;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
+  footer section.main {
+    flex-direction: column;
+    gap: 3.25rem !important;
+  }
+}
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  footer section.main {
+    flex-direction: column;
+    gap: 3.25rem !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
+  footer section.main {
+    flex-direction: column;
+    gap: 3.25rem;
+  }
+  footer section.main .links {
+    grid-template-columns: auto auto;
+  }
+  footer section.main .links div.align {
+    margin: 0 auto;
+  }
+  footer section.main .links .footer-legal,
+  footer section.main .links .footer-contact {
+    grid-column: 1 / span 2;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+  footer section.main {
+    flex-direction: column;
+    gap: 3.25rem !important;
   }
 }
 * {
@@ -1786,14 +2259,14 @@ a {
     font-size: 0.9rem;
   }
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   p,
   li,
   a {
     font-size: 0.9rem;
   }
 }
-@media screen and (min-width: 1081px)  {
+@media screen and (min-width: 1195px)  {
   p,
   li,
   a {

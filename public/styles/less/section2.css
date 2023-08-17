@@ -15,6 +15,9 @@
 .davy-gray {
   color: #525252;
 }
+.bred {
+  border: 1px solid red;
+}
 .section2 {
   display: flex;
   background-color: #192cd1;
@@ -84,13 +87,19 @@
   color: #E8EBFF;
   font-weight: bold;
 }
-@media screen and (min-device-width: 927px) and (max-device-width: 1080px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+@media screen and (min-device-width: 927px) and (max-device-width: 1194px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
   .section2 .img-cont img {
     width: 40vw;
   }
   .section2 .text {
     height: auto;
     padding: 13.5vh 3.5vw;
+  }
+  .section2 .text .inner h2 {
+    font-size: 1.8rem;
+  }
+  .section2 .text h2 {
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1080px) and (orientation: portrait)  {
@@ -104,8 +113,14 @@
   .section2 .text .inner {
     transform: scale(0.9);
   }
-  .section2 .text h2 {
-    font-size: 2rem;
+  .section2 .text .inner h2 {
+    font-size: 1.4rem;
+  }
+  .section2 .text .inner ul {
+    row-gap: 0.8rem;
+  }
+  .section2 .text .inner ul li span {
+    font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 926px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
@@ -122,8 +137,18 @@
   .section2 .text .inner {
     transform: scale(0.8);
   }
+  .section2 .text .inner h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+  .section2 .text .inner p {
+    margin-bottom: 0.8rem;
+  }
+  .section2 .text .inner ul {
+    margin-bottom: 1rem;
+  }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait)  {
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait)  {
   .section2 {
     flex-direction: column;
     margin-top: 13.52vh;
