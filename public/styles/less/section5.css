@@ -79,6 +79,7 @@
     flex-direction: column-reverse;
     gap: 5.15vh;
     padding: 6.87vh 6.51vw 6.87vh 6.51vw;
+    margin-top: 35px;
   }
   .section5 img {
     width: 55vw;

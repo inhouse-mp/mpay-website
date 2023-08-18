@@ -207,7 +207,7 @@
 
   // MOBILE PORTRAIT
   @media @mobile_portrait {
-    padding-bottom: 170px;
+    padding-bottom: 190px;
     h1{
       margin-bottom: 20px;
       text-align: center;
@@ -230,7 +230,7 @@
       .carousel-indicators {
         flex-direction: row;
         gap: 12px;
-        margin-top: -250px;
+        margin-top: -210px;
 
         button {
           border:1px solid @davy-gray;
@@ -254,8 +254,18 @@
         
         .carousel-item {
           flex-direction: column;
+          &.active{
+            .carousel-caption{
+              
+              opacity: 1;
+            }
+          }
           .carousel-caption {
-            padding: 3.43vh 6.51vw0vh 6.51vw;
+            // border: 1px solid red;
+            transition: 0.3s ease;
+            transition-delay: .03s;
+            opacity: 0;
+            padding: 3.43vh 6.51vw 0vh 6.51vw;
             display: flex !important;
             flex-direction: column;
             position: relative !important;
@@ -263,6 +273,7 @@
             left: 0px;
 
             margin-top: 80px;
+
 
             h5 {
               font-size: 1.25rem;
