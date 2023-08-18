@@ -763,7 +763,7 @@ nav .dropdown.mobile .dropdown-menu .item {
 .section2 .text .inner {
   display: inherit;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 450px;
 }
 .section2 .text .inner h2 {
   font-size: 2rem;
@@ -1293,7 +1293,7 @@ nav .dropdown.mobile .dropdown-menu .item {
   .section4 #carousel .carousel-indicators {
     flex-direction: row;
     gap: 12px;
-    margin-top: -160px;
+    margin-top: -250px;
   }
   .section4 #carousel .carousel-indicators button {
     border: 1px solid #525252;
